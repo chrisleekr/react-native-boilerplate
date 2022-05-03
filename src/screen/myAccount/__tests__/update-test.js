@@ -64,7 +64,14 @@ describe('MyAccountUpdateScreen', () => {
     store.dispatch(me());
 
     rendered = render(component);
-    await waitFor(() => expect(rendered.toJSON()).not.toBeNull());
+
+    // Workaround to wait for animation finished
+    await waitFor(() =>
+      expect(
+        within(rendered.getByTestId('first-name-input')).getByTestId('label')
+          .props.style.top
+      ).toBe(18)
+    );
   });
 
   it('matches snapshot', () => {
