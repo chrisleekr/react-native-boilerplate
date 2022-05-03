@@ -1,0 +1,97 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SamplePageScreen matches snapshot 1`] = `
+<RNCSafeAreaView
+  edges={
+    Array [
+      "bottom",
+      "left",
+      "right",
+      "top",
+    ]
+  }
+  style={
+    Array [
+      Object {
+        "flex": 1,
+      },
+      Object {
+        "backgroundColor": "#f0f0f0",
+      },
+      undefined,
+    ]
+  }
+  testID="sample-page-screen"
+>
+  <tab-view
+    lazy={true}
+    navigationState={
+      Object {
+        "index": 0,
+        "routes": Array [
+          Object {
+            "key": "samplePage1",
+            "title": "Sample Page 1",
+          },
+          Object {
+            "key": "samplePage2",
+            "title": "Sample Page 2",
+          },
+        ],
+      }
+    }
+    offscreenPageLimit={2}
+    onIndexChange={[Function]}
+    renderTabBar={[Function]}
+    testID="tab-view"
+  />
+</RNCSafeAreaView>
+`;
+
+exports[`SamplePageScreen trigger tab-bar render matches snapshot 1`] = `
+<RNCSafeAreaView
+  edges={
+    Array [
+      "bottom",
+      "left",
+      "right",
+      "top",
+    ]
+  }
+  style={
+    Array [
+      Object {
+        "flex": 1,
+      },
+      Object {
+        "backgroundColor": "#f0f0f0",
+      },
+      undefined,
+    ]
+  }
+  testID="sample-page-screen"
+>
+  <tab-view
+    lazy={true}
+    navigationState={
+      Object {
+        "index": 0,
+        "routes": Array [
+          Object {
+            "key": "samplePage1",
+            "title": "Sample Page 1",
+          },
+          Object {
+            "key": "samplePage2",
+            "title": "Sample Page 2",
+          },
+        ],
+      }
+    }
+    offscreenPageLimit={2}
+    onIndexChange={[Function]}
+    renderTabBar={[Function]}
+    testID="tab-view"
+  />
+</RNCSafeAreaView>
+`;

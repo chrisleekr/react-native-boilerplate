@@ -1,0 +1,34 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NoInternetToast when connected matches snapshot 1`] = `null`;
+
+exports[`NoInternetToast when is not connected matches snapshot 1`] = `
+<View
+  style={
+    Object {
+      "alignItems": "center",
+      "backgroundColor": "#d70015",
+      "bottom": 0,
+      "flexDirection": "row",
+      "height": 18,
+      "justifyContent": "center",
+      "position": "absolute",
+      "width": 750,
+      "zIndex": 10,
+    }
+  }
+  testID="no-internet-toast"
+>
+  <Text
+    style={
+      Object {
+        "color": "#fff",
+        "fontSize": 11,
+      }
+    }
+    testID="text"
+  >
+    No Internet Connection
+  </Text>
+</View>
+`;

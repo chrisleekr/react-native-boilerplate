@@ -1,0 +1,481 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SettingScreen dark mode toggle dark mode matches snapshot 1`] = `
+<RNCSafeAreaView
+  edges={
+    Array [
+      "bottom",
+      "left",
+      "right",
+      "top",
+    ]
+  }
+  style={
+    Array [
+      Object {
+        "flex": 1,
+      },
+      Object {
+        "backgroundColor": "#121212",
+      },
+      Object {
+        "flex": 1,
+        "flexDirection": "column",
+        "padding": 10,
+      },
+    ]
+  }
+  testID="setting-screen"
+>
+  <View
+    accessible={true}
+    collapsable={false}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "left": 4,
+        "opacity": 1,
+        "position": "absolute",
+        "top": 10,
+      }
+    }
+    testID="back-button"
+  >
+    <Text
+      allowFontScaling={false}
+      selectable={false}
+      style={
+        Array [
+          Object {
+            "color": "#ffffff",
+            "fontSize": 25,
+          },
+          undefined,
+          Object {
+            "fontFamily": "Material Design Icons",
+            "fontStyle": "normal",
+            "fontWeight": "normal",
+          },
+          Object {},
+        ]
+      }
+    >
+      󱦱
+    </Text>
+  </View>
+  <View
+    style={
+      Object {
+        "marginTop": 25,
+      }
+    }
+  >
+    <Text
+      style={
+        Array [
+          Object {
+            "fontSize": 21,
+            "fontWeight": "bold",
+            "marginBottom": 10,
+          },
+          Object {
+            "color": "#ffffff",
+          },
+        ]
+      }
+    >
+      Settings
+    </Text>
+    <RCTScrollView
+      showsHorizontalScrollIndicator={true}
+      showsVerticalScrollIndicator={false}
+    >
+      <View>
+        <View
+          style={
+            Array [
+              Object {
+                "alignItems": "center",
+                "borderRadius": 5,
+                "flex": 1,
+                "flexDirection": "row",
+                "justifyContent": "space-between",
+                "padding": 10,
+              },
+              Object {
+                "backgroundColor": "#3f4045",
+              },
+            ]
+          }
+        >
+          <Text
+            style={
+              Array [
+                Object {
+                  "fontSize": 15,
+                },
+                Object {
+                  "color": "#F1DDBF",
+                },
+              ]
+            }
+            testID="dark-mode-label"
+          >
+            Dark mode
+          </Text>
+          <RCTSwitch
+            accessibilityRole="switch"
+            onChange={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            onTintColor="#81b0ff"
+            style={
+              Array [
+                Object {
+                  "height": 31,
+                  "width": 51,
+                },
+                Object {
+                  "backgroundColor": "#3e3e3e",
+                  "borderRadius": 16,
+                },
+              ]
+            }
+            testID="dark-mode-switch"
+            thumbTintColor="#f5dd4b"
+            tintColor="#767577"
+            value={true}
+          />
+        </View>
+      </View>
+    </RCTScrollView>
+  </View>
+</RNCSafeAreaView>
+`;
+
+exports[`SettingScreen dark mode toggle light mode matches snapshot 1`] = `
+<RNCSafeAreaView
+  edges={
+    Array [
+      "bottom",
+      "left",
+      "right",
+      "top",
+    ]
+  }
+  style={
+    Array [
+      Object {
+        "flex": 1,
+      },
+      Object {
+        "backgroundColor": "#f0f0f0",
+      },
+      Object {
+        "flex": 1,
+        "flexDirection": "column",
+        "padding": 10,
+      },
+    ]
+  }
+  testID="setting-screen"
+>
+  <View
+    accessible={true}
+    collapsable={false}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "left": 4,
+        "opacity": 1,
+        "position": "absolute",
+        "top": 10,
+      }
+    }
+    testID="back-button"
+  >
+    <Text
+      allowFontScaling={false}
+      selectable={false}
+      style={
+        Array [
+          Object {
+            "color": "#000000",
+            "fontSize": 25,
+          },
+          undefined,
+          Object {
+            "fontFamily": "Material Design Icons",
+            "fontStyle": "normal",
+            "fontWeight": "normal",
+          },
+          Object {},
+        ]
+      }
+    >
+      󱦱
+    </Text>
+  </View>
+  <View
+    style={
+      Object {
+        "marginTop": 25,
+      }
+    }
+  >
+    <Text
+      style={
+        Array [
+          Object {
+            "fontSize": 21,
+            "fontWeight": "bold",
+            "marginBottom": 10,
+          },
+          Object {
+            "color": "#000000",
+          },
+        ]
+      }
+    >
+      Settings
+    </Text>
+    <RCTScrollView
+      showsHorizontalScrollIndicator={true}
+      showsVerticalScrollIndicator={false}
+    >
+      <View>
+        <View
+          style={
+            Array [
+              Object {
+                "alignItems": "center",
+                "borderRadius": 5,
+                "flex": 1,
+                "flexDirection": "row",
+                "justifyContent": "space-between",
+                "padding": 10,
+              },
+              Object {
+                "backgroundColor": "#e4dfa7",
+              },
+            ]
+          }
+        >
+          <Text
+            style={
+              Array [
+                Object {
+                  "fontSize": 15,
+                },
+                Object {
+                  "color": "#525E75",
+                },
+              ]
+            }
+            testID="dark-mode-label"
+          >
+            Dark mode
+          </Text>
+          <RCTSwitch
+            accessibilityRole="switch"
+            onChange={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            onTintColor="#81b0ff"
+            style={
+              Array [
+                Object {
+                  "height": 31,
+                  "width": 51,
+                },
+                Object {
+                  "backgroundColor": "#3e3e3e",
+                  "borderRadius": 16,
+                },
+              ]
+            }
+            testID="dark-mode-switch"
+            thumbTintColor="#f4f3f4"
+            tintColor="#767577"
+            value={false}
+          />
+        </View>
+      </View>
+    </RCTScrollView>
+  </View>
+</RNCSafeAreaView>
+`;
+
+exports[`SettingScreen matches snapshot 1`] = `
+<RNCSafeAreaView
+  edges={
+    Array [
+      "bottom",
+      "left",
+      "right",
+      "top",
+    ]
+  }
+  style={
+    Array [
+      Object {
+        "flex": 1,
+      },
+      Object {
+        "backgroundColor": "#f0f0f0",
+      },
+      Object {
+        "flex": 1,
+        "flexDirection": "column",
+        "padding": 10,
+      },
+    ]
+  }
+  testID="setting-screen"
+>
+  <View
+    accessible={true}
+    collapsable={false}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "left": 4,
+        "opacity": 1,
+        "position": "absolute",
+        "top": 10,
+      }
+    }
+    testID="back-button"
+  >
+    <Text
+      allowFontScaling={false}
+      selectable={false}
+      style={
+        Array [
+          Object {
+            "color": "#000000",
+            "fontSize": 25,
+          },
+          undefined,
+          Object {
+            "fontFamily": "Material Design Icons",
+            "fontStyle": "normal",
+            "fontWeight": "normal",
+          },
+          Object {},
+        ]
+      }
+    >
+      󱦱
+    </Text>
+  </View>
+  <View
+    style={
+      Object {
+        "marginTop": 25,
+      }
+    }
+  >
+    <Text
+      style={
+        Array [
+          Object {
+            "fontSize": 21,
+            "fontWeight": "bold",
+            "marginBottom": 10,
+          },
+          Object {
+            "color": "#000000",
+          },
+        ]
+      }
+    >
+      Settings
+    </Text>
+    <RCTScrollView
+      showsHorizontalScrollIndicator={true}
+      showsVerticalScrollIndicator={false}
+    >
+      <View>
+        <View
+          style={
+            Array [
+              Object {
+                "alignItems": "center",
+                "borderRadius": 5,
+                "flex": 1,
+                "flexDirection": "row",
+                "justifyContent": "space-between",
+                "padding": 10,
+              },
+              Object {
+                "backgroundColor": "#e4dfa7",
+              },
+            ]
+          }
+        >
+          <Text
+            style={
+              Array [
+                Object {
+                  "fontSize": 15,
+                },
+                Object {
+                  "color": "#525E75",
+                },
+              ]
+            }
+            testID="dark-mode-label"
+          >
+            Dark mode
+          </Text>
+          <RCTSwitch
+            accessibilityRole="switch"
+            onChange={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            onTintColor="#81b0ff"
+            style={
+              Array [
+                Object {
+                  "height": 31,
+                  "width": 51,
+                },
+                Object {
+                  "backgroundColor": "#3e3e3e",
+                  "borderRadius": 16,
+                },
+              ]
+            }
+            testID="dark-mode-switch"
+            thumbTintColor="#f4f3f4"
+            tintColor="#767577"
+            value={false}
+          />
+        </View>
+      </View>
+    </RCTScrollView>
+  </View>
+</RNCSafeAreaView>
+`;

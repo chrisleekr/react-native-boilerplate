@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AppContext matches snapshot 1`] = `
+<Text
+  testID="text"
+>
+  Test message
+</Text>
+`;

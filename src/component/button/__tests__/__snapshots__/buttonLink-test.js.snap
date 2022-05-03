@@ -1,0 +1,44 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ButtonLink matches snapshot 1`] = `
+<View
+  accessible={true}
+  collapsable={false}
+  focusable={true}
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Object {
+      "opacity": 1,
+    }
+  }
+  testID="button"
+>
+  <Text
+    style={
+      Array [
+        Object {
+          "flexDirection": "row",
+          "fontSize": 12,
+          "height": 30,
+          "textAlignVertical": "center",
+          "width": "100%",
+        },
+        Object {
+          "fontSize": 13,
+        },
+        Object {
+          "color": "#000000",
+        },
+      ]
+    }
+  >
+    My Text
+  </Text>
+</View>
+`;

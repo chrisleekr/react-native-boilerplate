@@ -1,0 +1,219 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TextInputIcon hasError matches snapshot 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "flex": 1,
+        "flexDirection": "row",
+      },
+      Object {
+        "backgroundColor": "#000000",
+      },
+    ]
+  }
+  testID="text-input-icon"
+>
+  <TextInput
+    keyboardType="number-pad"
+    label="My Label"
+    onBlur={[Function]}
+    onChangeText={[Function]}
+    style={
+      Array [
+        Object {
+          "borderWidth": 1,
+          "height": 35,
+          "paddingBottom": 0,
+          "paddingTop": 0,
+          "textAlignVertical": "center",
+          "width": "100%",
+        },
+        Object {
+          "fontSize": 15,
+        },
+        Object {
+          "borderColor": "red",
+          "borderWidth": 1,
+        },
+        Object {
+          "backgroundColor": "#e4dfa7",
+        },
+      ]
+    }
+    testID="input"
+    value="Initial text"
+  />
+  <View
+    style={
+      Array [
+        Object {
+          "position": "absolute",
+          "right": 5,
+          "top": 8,
+          "zIndex": 1,
+        },
+      ]
+    }
+    testID="activity-indicator"
+  >
+    <ActivityIndicator
+      color="rgba(0, 0, 0, 0.26)"
+    />
+  </View>
+</View>
+`;
+
+exports[`TextInputIcon isLoading matches snapshot 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "flex": 1,
+        "flexDirection": "row",
+      },
+      Object {
+        "backgroundColor": "#000000",
+      },
+    ]
+  }
+  testID="text-input-icon"
+>
+  <TextInput
+    keyboardType="number-pad"
+    label="My Label"
+    onBlur={[Function]}
+    onChangeText={[Function]}
+    style={
+      Array [
+        Object {
+          "borderWidth": 1,
+          "height": 35,
+          "paddingBottom": 0,
+          "paddingTop": 0,
+          "textAlignVertical": "center",
+          "width": "100%",
+        },
+        Object {
+          "fontSize": 15,
+        },
+        undefined,
+        Object {
+          "backgroundColor": "#e4dfa7",
+        },
+      ]
+    }
+    testID="input"
+    value="Initial text"
+  />
+  <View
+    style={
+      Array [
+        Object {
+          "position": "absolute",
+          "right": 5,
+          "top": 8,
+          "zIndex": 1,
+        },
+      ]
+    }
+    testID="activity-indicator"
+  >
+    <ActivityIndicator
+      color="rgba(0, 0, 0, 0.26)"
+    />
+  </View>
+</View>
+`;
+
+exports[`TextInputIcon matches snapshot 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "flex": 1,
+        "flexDirection": "row",
+      },
+      Object {
+        "backgroundColor": "#000000",
+      },
+    ]
+  }
+  testID="text-input-icon"
+>
+  <TextInput
+    keyboardType="number-pad"
+    label="My Label"
+    onBlur={[Function]}
+    onChangeText={[Function]}
+    style={
+      Array [
+        Object {
+          "borderWidth": 1,
+          "height": 35,
+          "paddingBottom": 0,
+          "paddingTop": 0,
+          "textAlignVertical": "center",
+          "width": "100%",
+        },
+        Object {
+          "fontSize": 15,
+        },
+        undefined,
+        Object {
+          "backgroundColor": "#e4dfa7",
+        },
+      ]
+    }
+    testID="input"
+    value="Initial text"
+  />
+  <View
+    accessible={true}
+    collapsable={false}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "marginLeft": 10,
+        "opacity": 1,
+        "position": "absolute",
+        "right": 0,
+        "textAlignVertical": "center",
+        "top": 2,
+        "zIndex": 1,
+      }
+    }
+    testID="icon"
+  >
+    <Text
+      allowFontScaling={false}
+      selectable={false}
+      style={
+        Array [
+          Object {
+            "color": "#000000",
+            "fontSize": 15,
+          },
+          undefined,
+          Object {
+            "fontFamily": "Material Design Icons",
+            "fontStyle": "normal",
+            "fontWeight": "normal",
+          },
+          Object {},
+        ]
+      }
+    >
+      󰐕
+    </Text>
+  </View>
+</View>
+`;

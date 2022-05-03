@@ -1,0 +1,408 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TodoCard loading is true matches snapshot 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "alignContent": "space-between",
+        "borderRadius": 5,
+        "flex": 1,
+        "flexDirection": "row",
+        "justifyContent": "center",
+        "marginBottom": 10,
+        "padding": 10,
+      },
+      Object {
+        "backgroundColor": "#e4dfa7",
+        "shadowColor": "#000000",
+      },
+    ]
+  }
+  testID="todo-card"
+>
+  <View
+    accessibilityState={
+      Object {
+        "disabled": true,
+      }
+    }
+    accessible={true}
+    collapsable={false}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "flexBasis": 25,
+        "flexGrow": 0,
+        "flexShrink": 0,
+        "opacity": 1,
+      }
+    }
+    testID="left-icon"
+  >
+    <Text
+      allowFontScaling={false}
+      selectable={false}
+      style={
+        Array [
+          Object {
+            "color": "#000000",
+            "fontSize": 20,
+          },
+          undefined,
+          Object {
+            "fontFamily": "Material Design Icons",
+            "fontStyle": "normal",
+            "fontWeight": "normal",
+          },
+          Object {},
+        ]
+      }
+    >
+      󰄰
+    </Text>
+  </View>
+  <Text
+    style={
+      Array [
+        Object {
+          "flexGrow": 1,
+          "flexShrink": 0,
+          "fontSize": 15,
+        },
+        Object {
+          "color": "#000000",
+        },
+        Object {},
+      ]
+    }
+    testID="text"
+  >
+    My todo
+  </Text>
+  <View
+    accessibilityState={
+      Object {
+        "disabled": true,
+      }
+    }
+    accessible={true}
+    collapsable={false}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "opacity": 1,
+      }
+    }
+    testID="right-icon"
+  >
+    <Text
+      allowFontScaling={false}
+      selectable={false}
+      style={
+        Array [
+          Object {
+            "color": "#000000",
+            "fontSize": 20,
+          },
+          undefined,
+          Object {
+            "fontFamily": "Material Design Icons",
+            "fontStyle": "normal",
+            "fontWeight": "normal",
+          },
+          Object {},
+        ]
+      }
+    >
+      󰩺
+    </Text>
+  </View>
+</View>
+`;
+
+exports[`TodoCard matches snapshot 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "alignContent": "space-between",
+        "borderRadius": 5,
+        "flex": 1,
+        "flexDirection": "row",
+        "justifyContent": "center",
+        "marginBottom": 10,
+        "padding": 10,
+      },
+      Object {
+        "backgroundColor": "#e4dfa7",
+        "shadowColor": "#000000",
+      },
+    ]
+  }
+  testID="todo-card"
+>
+  <View
+    accessibilityState={
+      Object {
+        "disabled": false,
+      }
+    }
+    accessible={true}
+    collapsable={false}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "flexBasis": 25,
+        "flexGrow": 0,
+        "flexShrink": 0,
+        "opacity": 1,
+      }
+    }
+    testID="left-icon"
+  >
+    <Text
+      allowFontScaling={false}
+      selectable={false}
+      style={
+        Array [
+          Object {
+            "color": "#000000",
+            "fontSize": 20,
+          },
+          undefined,
+          Object {
+            "fontFamily": "Material Design Icons",
+            "fontStyle": "normal",
+            "fontWeight": "normal",
+          },
+          Object {},
+        ]
+      }
+    >
+      󰄰
+    </Text>
+  </View>
+  <Text
+    style={
+      Array [
+        Object {
+          "flexGrow": 1,
+          "flexShrink": 0,
+          "fontSize": 15,
+        },
+        Object {
+          "color": "#000000",
+        },
+        Object {},
+      ]
+    }
+    testID="text"
+  >
+    My todo
+  </Text>
+  <View
+    accessibilityState={
+      Object {
+        "disabled": false,
+      }
+    }
+    accessible={true}
+    collapsable={false}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "opacity": 1,
+      }
+    }
+    testID="right-icon"
+  >
+    <Text
+      allowFontScaling={false}
+      selectable={false}
+      style={
+        Array [
+          Object {
+            "color": "#000000",
+            "fontSize": 20,
+          },
+          undefined,
+          Object {
+            "fontFamily": "Material Design Icons",
+            "fontStyle": "normal",
+            "fontWeight": "normal",
+          },
+          Object {},
+        ]
+      }
+    >
+      󰩺
+    </Text>
+  </View>
+</View>
+`;
+
+exports[`TodoCard todo with completed matches snapshot 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "alignContent": "space-between",
+        "borderRadius": 5,
+        "flex": 1,
+        "flexDirection": "row",
+        "justifyContent": "center",
+        "marginBottom": 10,
+        "padding": 10,
+      },
+      Object {
+        "backgroundColor": "#e4dfa7",
+        "shadowColor": "#000000",
+      },
+    ]
+  }
+  testID="todo-card"
+>
+  <View
+    accessibilityState={
+      Object {
+        "disabled": false,
+      }
+    }
+    accessible={true}
+    collapsable={false}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "flexBasis": 25,
+        "flexGrow": 0,
+        "flexShrink": 0,
+        "opacity": 1,
+      }
+    }
+    testID="left-icon"
+  >
+    <Text
+      allowFontScaling={false}
+      selectable={false}
+      style={
+        Array [
+          Object {
+            "color": "#000000",
+            "fontSize": 20,
+          },
+          undefined,
+          Object {
+            "fontFamily": "Material Design Icons",
+            "fontStyle": "normal",
+            "fontWeight": "normal",
+          },
+          Object {},
+        ]
+      }
+    >
+      󰄳
+    </Text>
+  </View>
+  <Text
+    style={
+      Array [
+        Object {
+          "flexGrow": 1,
+          "flexShrink": 0,
+          "fontSize": 15,
+        },
+        Object {
+          "color": "#525E75",
+        },
+        Object {
+          "textDecorationLine": "line-through",
+        },
+      ]
+    }
+    testID="text"
+  >
+    My completed todo
+  </Text>
+  <View
+    accessibilityState={
+      Object {
+        "disabled": false,
+      }
+    }
+    accessible={true}
+    collapsable={false}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "opacity": 1,
+      }
+    }
+    testID="right-icon"
+  >
+    <Text
+      allowFontScaling={false}
+      selectable={false}
+      style={
+        Array [
+          Object {
+            "color": "#000000",
+            "fontSize": 20,
+          },
+          undefined,
+          Object {
+            "fontFamily": "Material Design Icons",
+            "fontStyle": "normal",
+            "fontWeight": "normal",
+          },
+          Object {},
+        ]
+      }
+    >
+      󰩺
+    </Text>
+  </View>
+</View>
+`;

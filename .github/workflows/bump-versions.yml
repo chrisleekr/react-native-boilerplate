@@ -1,0 +1,31 @@
+name: Bump versions
+
+on: [workflow_dispatch]
+
+jobs:
+  bump-versions:
+    name: Bump versions
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout source code
+        uses: actions/checkout@v2
+
+      - id: bump-version
+        name: Bump Version (Patch)
+        if:
+          github.repository == 'chrisleekr/react-native-boilerplate' && github.ref ==
+          'refs/heads/main'
+        run: |
+          git config --global user.email "${{ secrets.GIT_CI_EMAIL }}"
+          git config --global user.name "$GITHUB_ACTOR"
+          PACKAGE_VERSION=$(npm version patch -m "bump: update version to %s [skip ci]")
+          git push https://$GITHUB_ACTOR:${{ secrets.GIT_CI_PASSWORD }}@github.com/chrisleekr/react-native-boilerplate HEAD:$GITHUB_REF
+          git push https://$GITHUB_ACTOR:${{ secrets.GIT_CI_PASSWORD }}@github.com/chrisleekr/react-native-boilerplate $PACKAGE_VERSION
+          echo "::set-output name=PACKAGE_VERSION::$PACKAGE_VERSION"
+
+      - name: Trigger release workflow
+        uses: peter-evans/repository-dispatch@v1
+        with:
+          token: ${{ secrets.GIT_CI_PASSWORD }}
+          event-type: Build & Release
+          client-payload: '{"ref": "${{ steps.bump-version.outputs.PACKAGE_VERSION }}"}'

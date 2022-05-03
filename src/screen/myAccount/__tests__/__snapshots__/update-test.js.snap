@@ -1,0 +1,391 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MyAccountUpdateScreen matches snapshot 1`] = `
+<RNCSafeAreaView
+  edges={
+    Array [
+      "bottom",
+      "left",
+      "right",
+      "top",
+    ]
+  }
+  style={
+    Array [
+      Object {
+        "flex": 1,
+      },
+      Object {
+        "backgroundColor": "#f0f0f0",
+      },
+      Object {
+        "flex": 1,
+        "flexDirection": "column",
+        "padding": 10,
+      },
+    ]
+  }
+  testID="my-account-update"
+>
+  <View
+    accessible={true}
+    collapsable={false}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "left": 4,
+        "opacity": 1,
+        "position": "absolute",
+        "top": 10,
+      }
+    }
+    testID="back-button"
+  >
+    <Text
+      allowFontScaling={false}
+      selectable={false}
+      style={
+        Array [
+          Object {
+            "color": "#000000",
+            "fontSize": 25,
+          },
+          undefined,
+          Object {
+            "fontFamily": "Material Design Icons",
+            "fontStyle": "normal",
+            "fontWeight": "normal",
+          },
+          Object {},
+        ]
+      }
+    >
+      󱦱
+    </Text>
+  </View>
+  <Text
+    style={
+      Array [
+        Object {
+          "fontSize": 21,
+          "fontWeight": "bold",
+          "marginTop": 30,
+        },
+        Object {
+          "color": "#000000",
+        },
+      ]
+    }
+    testID="title"
+  >
+    Update my account
+  </Text>
+  <View
+    style={
+      Object {
+        "marginTop": 10,
+      }
+    }
+  >
+    <View
+      style={
+        Array [
+          Object {
+            "marginBottom": 10,
+          },
+          undefined,
+        ]
+      }
+      testID="username-label"
+    >
+      <Text
+        style={
+          Array [
+            Object {
+              "fontSize": 16,
+            },
+            undefined,
+            Object {
+              "color": "#525E75",
+            },
+          ]
+        }
+        testID="label"
+      >
+        Username
+      </Text>
+      <Text
+        style={
+          Array [
+            Object {
+              "height": 23,
+              "width": "100%",
+            },
+            undefined,
+            Object {
+              "color": "#000000",
+            },
+          ]
+        }
+        testID="text"
+      >
+        chrislee
+      </Text>
+    </View>
+    <View
+      style={
+        Object {
+          "paddingTop": 18,
+        }
+      }
+      testID="first-name-input"
+    >
+      <Text
+        collapsable={false}
+        style={
+          Object {
+            "color": "#525E75",
+            "fontSize": 14,
+            "left": 0,
+            "position": "absolute",
+            "top": 18,
+          }
+        }
+        testID="label"
+      >
+        First name
+      </Text>
+      <TextInput
+        onBlur={[Function]}
+        onChangeText={[Function]}
+        onFocus={[Function]}
+        style={
+          Array [
+            Object {
+              "borderBottomColor": "black",
+              "borderBottomWidth": 1,
+              "height": 44,
+              "width": "100%",
+            },
+            Object {
+              "fontWeight": "bold",
+              "marginBottom": 10,
+              "textAlign": "left",
+            },
+            Object {
+              "color": "#000000",
+            },
+            undefined,
+          ]
+        }
+        testID="input"
+      />
+    </View>
+    <View
+      style={
+        Object {
+          "paddingTop": 18,
+        }
+      }
+      testID="last-name-input"
+    >
+      <Text
+        collapsable={false}
+        style={
+          Object {
+            "color": "#525E75",
+            "fontSize": 14,
+            "left": 0,
+            "position": "absolute",
+            "top": 18,
+          }
+        }
+        testID="label"
+      >
+        Last name
+      </Text>
+      <TextInput
+        onBlur={[Function]}
+        onChangeText={[Function]}
+        onFocus={[Function]}
+        style={
+          Array [
+            Object {
+              "borderBottomColor": "black",
+              "borderBottomWidth": 1,
+              "height": 44,
+              "width": "100%",
+            },
+            Object {
+              "fontWeight": "bold",
+              "marginBottom": 10,
+              "textAlign": "left",
+            },
+            Object {
+              "color": "#000000",
+            },
+            undefined,
+          ]
+        }
+        testID="input"
+      />
+    </View>
+    <View
+      style={
+        Object {
+          "paddingTop": 18,
+        }
+      }
+      testID="password-input"
+    >
+      <Text
+        collapsable={false}
+        style={
+          Object {
+            "color": "#525E75",
+            "fontSize": 14,
+            "left": 0,
+            "position": "absolute",
+            "top": 18,
+          }
+        }
+        testID="label"
+      >
+        Password
+      </Text>
+      <TextInput
+        onBlur={[Function]}
+        onChangeText={[Function]}
+        onFocus={[Function]}
+        secureTextEntry={true}
+        style={
+          Array [
+            Object {
+              "borderBottomColor": "black",
+              "borderBottomWidth": 1,
+              "height": 44,
+              "width": "100%",
+            },
+            Object {
+              "fontWeight": "bold",
+              "marginBottom": 10,
+              "textAlign": "left",
+            },
+            Object {
+              "color": "#000000",
+            },
+            undefined,
+          ]
+        }
+        testID="input"
+        value=""
+      />
+    </View>
+    <View
+      style={
+        Object {
+          "paddingTop": 18,
+        }
+      }
+      testID="email-address-input"
+    >
+      <Text
+        collapsable={false}
+        style={
+          Object {
+            "color": "#525E75",
+            "fontSize": 14,
+            "left": 0,
+            "position": "absolute",
+            "top": 18,
+          }
+        }
+        testID="label"
+      >
+        Email Address
+      </Text>
+      <TextInput
+        keyboardType="email-address"
+        onBlur={[Function]}
+        onChangeText={[Function]}
+        onFocus={[Function]}
+        style={
+          Array [
+            Object {
+              "borderBottomColor": "black",
+              "borderBottomWidth": 1,
+              "height": 44,
+              "width": "100%",
+            },
+            Object {
+              "fontWeight": "bold",
+              "marginBottom": 10,
+              "textAlign": "left",
+            },
+            Object {
+              "color": "#000000",
+            },
+            undefined,
+          ]
+        }
+        testID="input"
+      />
+    </View>
+    <View
+      accessibilityState={
+        Object {
+          "disabled": false,
+        }
+      }
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "#6200EE",
+          "borderColor": "black",
+          "borderWidth": 1,
+          "flexDirection": "row",
+          "fontSize": 10,
+          "height": 44,
+          "justifyContent": "center",
+          "marginBottom": 5,
+          "opacity": 1,
+          "padding": 10,
+          "paddingHorizontal": 10,
+          "width": "100%",
+        }
+      }
+      testID="update-button"
+    >
+      <Text
+        style={
+          Array [
+            undefined,
+            Object {
+              "color": "#ffffff",
+            },
+          ]
+        }
+      >
+        Update
+      </Text>
+    </View>
+  </View>
+</RNCSafeAreaView>
+`;

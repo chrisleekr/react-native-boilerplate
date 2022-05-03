@@ -1,0 +1,55 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`LabelText matches snapshot 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "marginBottom": 10,
+      },
+      Object {
+        "backgroundColor": "#000000",
+      },
+    ]
+  }
+  testID="label-text"
+>
+  <Text
+    style={
+      Array [
+        Object {
+          "fontSize": 16,
+        },
+        Object {
+          "backgroundColor": "#EFEFEF",
+        },
+        Object {
+          "color": "#525E75",
+        },
+      ]
+    }
+    testID="label"
+  >
+    My Label
+  </Text>
+  <Text
+    style={
+      Array [
+        Object {
+          "height": 23,
+          "width": "100%",
+        },
+        Object {
+          "fontSize": 13,
+        },
+        Object {
+          "color": "#000000",
+        },
+      ]
+    }
+    testID="text"
+  >
+    My Text
+  </Text>
+</View>
+`;

@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly matches snapshot 1`] = `
+Array [
+  <View
+    style={
+      Object {
+        "flex": 1,
+      }
+    }
+  >
+    <main-navigation
+      testID="main-navigation"
+    />
+    <no-internet-toast
+      testID="no-internet-toast"
+    />
+  </View>,
+  <Toast />,
+]
+`;

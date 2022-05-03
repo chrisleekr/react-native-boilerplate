@@ -1,0 +1,165 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ButtonWithActivityIndicator disabled matches snapshot 1`] = `
+<View
+  accessibilityState={
+    Object {
+      "disabled": true,
+    }
+  }
+  accessible={true}
+  collapsable={false}
+  focusable={true}
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Object {
+      "alignItems": "center",
+      "backgroundColor": "rgba(0, 0, 0, 0.26)",
+      "borderColor": "black",
+      "borderWidth": 1,
+      "flexDirection": "row",
+      "fontSize": 13,
+      "height": 44,
+      "justifyContent": "center",
+      "opacity": 1,
+      "padding": 10,
+      "paddingHorizontal": 10,
+      "width": "100%",
+    }
+  }
+  testID="button"
+>
+  <Text
+    style={
+      Array [
+        undefined,
+        Object {
+          "color": "#ffffff",
+        },
+      ]
+    }
+  >
+    My Text
+  </Text>
+</View>
+`;
+
+exports[`ButtonWithActivityIndicator isLoading matches snapshot 1`] = `
+<View
+  accessibilityState={
+    Object {
+      "disabled": true,
+    }
+  }
+  accessible={true}
+  collapsable={false}
+  focusable={true}
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Object {
+      "alignItems": "center",
+      "backgroundColor": "rgba(0, 0, 0, 0.26)",
+      "borderColor": "black",
+      "borderWidth": 1,
+      "flexDirection": "row",
+      "fontSize": 13,
+      "height": 44,
+      "justifyContent": "center",
+      "opacity": 1,
+      "padding": 10,
+      "paddingHorizontal": 10,
+      "width": "100%",
+    }
+  }
+  testID="button"
+>
+  <View
+    style={
+      Array [
+        Object {
+          "marginRight": 5,
+        },
+      ]
+    }
+    testID="activity-indicator"
+  >
+    <ActivityIndicator
+      color="#ffffff"
+    />
+  </View>
+  <Text
+    style={
+      Array [
+        undefined,
+        Object {
+          "color": "#000000",
+        },
+      ]
+    }
+  >
+    My Text
+  </Text>
+</View>
+`;
+
+exports[`ButtonWithActivityIndicator no loading, no disabled matches snapshot 1`] = `
+<View
+  accessibilityState={
+    Object {
+      "disabled": false,
+    }
+  }
+  accessible={true}
+  collapsable={false}
+  focusable={true}
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Object {
+      "alignItems": "center",
+      "backgroundColor": "#6200EE",
+      "borderColor": "black",
+      "borderWidth": 1,
+      "flexDirection": "row",
+      "fontSize": 13,
+      "height": 44,
+      "justifyContent": "center",
+      "opacity": 1,
+      "padding": 10,
+      "paddingHorizontal": 10,
+      "width": "100%",
+    }
+  }
+  testID="button"
+>
+  <Text
+    style={
+      Array [
+        undefined,
+        Object {
+          "color": "#ffffff",
+        },
+      ]
+    }
+  >
+    My Text
+  </Text>
+</View>
+`;
