@@ -3,6 +3,7 @@ name: Build & Release
 on:
   repository_dispatch:
     types: [Build & Release]
+  workflow_dispatch:
 
 jobs:
   build-create-release:
@@ -10,6 +11,14 @@ jobs:
     runs-on: ubuntu-latest
     container: reactnativecommunity/react-native-android
     steps:
+      - name: Checkout source code
+        uses: actions/checkout@v2
+
+      - name: Setup node version
+        uses: actions/setup-node@v3
+        with:
+          node-version: 16
+
       - name: Build Android
         id: build_android
         run: |
