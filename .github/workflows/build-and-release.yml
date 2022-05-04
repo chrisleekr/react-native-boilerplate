@@ -9,7 +9,9 @@ jobs:
   build-create-release:
     name: Build & Create Release
     runs-on: ubuntu-latest
-    container: reactnativecommunity/react-native-android
+    container:
+      image: reactnativecommunity/react-native-android:latest
+      options: --user 1001
     steps:
       - name: Checkout source code
         uses: actions/checkout@v2
@@ -22,7 +24,7 @@ jobs:
       - name: Build Android
         id: build_android
         run: |
-          npm ci --omit=dev --ignore-scripts
+          npm ci
           npm run android:release
 
       - name: Create Release
