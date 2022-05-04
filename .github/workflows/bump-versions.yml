@@ -18,9 +18,10 @@ jobs:
         run: |
           git config --global user.email "${{ secrets.GIT_CI_EMAIL }}"
           git config --global user.name "$GITHUB_ACTOR"
+          git remote set-url origin https://$GITHUB_ACTOR:${{ secrets.GIT_CI_PASSWORD }}@github.com/chrisleekr/react-native-boilerplate
           PACKAGE_VERSION=$(npm version patch -m "bump: update version to %s [skip ci]")
-          git push https://$GITHUB_ACTOR:${{ secrets.GIT_CI_PASSWORD }}@github.com/chrisleekr/react-native-boilerplate HEAD:$GITHUB_REF
-          git push https://$GITHUB_ACTOR:${{ secrets.GIT_CI_PASSWORD }}@github.com/chrisleekr/react-native-boilerplate $PACKAGE_VERSION
+          git push HEAD:$GITHUB_REF
+          git push $PACKAGE_VERSION
           echo "::set-output name=PACKAGE_VERSION::$PACKAGE_VERSION"
 
       - name: Trigger release workflow
