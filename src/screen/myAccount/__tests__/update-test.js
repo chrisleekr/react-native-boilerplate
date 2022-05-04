@@ -61,10 +61,9 @@ describe('MyAccountUpdateScreen', () => {
   afterEach(cleanup);
 
   beforeEach(async () => {
-    store.dispatch(me());
-
-    rendered = render(component);
-    await waitFor(() => expect(rendered.toJSON()).not.toBeNull());
+    store.dispatch(me()).then(() => {
+      rendered = render(component);
+    });
   });
 
   it('matches snapshot', () => {

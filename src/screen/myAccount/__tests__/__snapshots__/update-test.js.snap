@@ -186,6 +186,7 @@ exports[`MyAccountUpdateScreen matches snapshot 1`] = `
           ]
         }
         testID="input"
+        value="Chris"
       />
     </View>
     <View
@@ -235,6 +236,7 @@ exports[`MyAccountUpdateScreen matches snapshot 1`] = `
           ]
         }
         testID="input"
+        value="Lee"
       />
     </View>
     <View
@@ -336,6 +338,7 @@ exports[`MyAccountUpdateScreen matches snapshot 1`] = `
           ]
         }
         testID="input"
+        value="tester@chrislee.kr"
       />
     </View>
     <View
