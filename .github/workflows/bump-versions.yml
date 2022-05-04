@@ -27,7 +27,7 @@ jobs:
           echo "::set-output name=PACKAGE_VERSION::$PACKAGE_VERSION"
 
       - name: Trigger release workflow
-        uses: peter-evans/repository-dispatch@v1
+        uses: peter-evans/repository-dispatch@v2
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           event-type: Build & Release

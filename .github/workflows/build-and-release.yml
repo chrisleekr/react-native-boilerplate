@@ -3,7 +3,6 @@ name: Build & Release
 on:
   repository_dispatch:
     types: [Build & Release]
-  workflow_dispatch:
 
 jobs:
   build-create-release:
