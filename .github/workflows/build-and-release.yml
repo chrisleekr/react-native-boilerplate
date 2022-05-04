@@ -22,7 +22,7 @@ jobs:
       - name: Build Android
         id: build_android
         run: |
-          npm ci
+          npm ci --omit=dev --ignore-scripts
           npm run android:release
 
       - name: Create Release
