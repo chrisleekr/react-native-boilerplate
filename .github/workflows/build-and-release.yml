@@ -10,6 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: write
+      packages: write
     container:
       image: reactnativecommunity/react-native-android:latest
       options: --user 1001
