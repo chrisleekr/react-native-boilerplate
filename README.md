@@ -58,3 +58,5 @@ $ $ npx react-native-rename "Travel App" -b com.junedomingo.travelapp
 ## Todo
 
 - [ ] Add E2E tests
+- [ ] Push notification
+- [ ] Biometrics

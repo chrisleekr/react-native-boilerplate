@@ -4,6 +4,9 @@ on:
   repository_dispatch:
     types: [Build & Release]
 
+permissions:
+  contents: write
+
 jobs:
   build-create-release:
     name: Build & Create Release
