@@ -4,13 +4,12 @@ on:
   repository_dispatch:
     types: [Build & Release]
 
-permissions:
-  contents: write
-
 jobs:
   build-create-release:
     name: Build & Create Release
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     container:
       image: reactnativecommunity/react-native-android:latest
       options: --user 1001
@@ -28,10 +27,12 @@ jobs:
         run: |
           npm ci
           npm run android:release
+          ls -al android/app/build/outputs/apk/release/app-release.apk
 
       - name: Release
         uses: softprops/action-gh-release@v1
         with:
+          token: ${{ secrets.REPO_ACCESS_TOKEN }}
           tag_name: ${{ github.event.client_payload.ref }}
           name: '<Update release name for ${{ github.event.client_payload.ref }}>'
           draft: true
