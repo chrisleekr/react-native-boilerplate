@@ -1,6 +1,7 @@
 name: Build & Release
 
 on:
+  push:
   repository_dispatch:
     types: [Build & Release]
 
@@ -50,23 +51,23 @@ jobs:
           npm ci
           npm run ios:build
 
-  release:
-    name: Release
-    runs-on: ubuntu-latest
-    needs: [build-android, build-ios]
-    permissions:
-      contents: write
-      packages: write
-    steps:
-      - name: Download all workflow run artifacts
-        uses: actions/download-artifact@v3
+  # release:
+  #   name: Release
+  #   runs-on: ubuntu-latest
+  #   needs: [build-android, build-ios]
+  #   permissions:
+  #     contents: write
+  #     packages: write
+  #   steps:
+  #     - name: Download all workflow run artifacts
+  #       uses: actions/download-artifact@v3
 
-      - name: Release
-        uses: softprops/action-gh-release@v1
-        with:
-          token: ${{ secrets.REPO_ACCESS_TOKEN }}
-          tag_name: ${{ github.event.client_payload.ref }}
-          name: '<Update release name for ${{ github.event.client_payload.ref }}>'
-          draft: true
-          prerelease: false
-          files: android/app/build/outputs/apk/release/app-release.apk
+  #     - name: Release
+  #       uses: softprops/action-gh-release@v1
+  #       with:
+  #         token: ${{ secrets.REPO_ACCESS_TOKEN }}
+  #         tag_name: ${{ github.event.client_payload.ref }}
+  #         name: '<Update release name for ${{ github.event.client_payload.ref }}>'
+  #         draft: true
+  #         prerelease: false
+  #         files: android/app/build/outputs/apk/release/app-release.apk
