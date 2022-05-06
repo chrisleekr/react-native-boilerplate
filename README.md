@@ -29,6 +29,8 @@ https://user-images.githubusercontent.com/5715919/166450457-04eaab8b-5d21-43ea-b
 
 ## How to run in your local
 
+### Android
+
 ```bash
 # Clone the repository
 git clone https://github.com/chrisleekr/react-native-boilerplate
@@ -42,6 +44,26 @@ npm start
 # Run Android
 npm run android
 ```
+
+### iOS
+
+```bash
+# Clone the repository
+git clone https://github.com/chrisleekr/react-native-boilerplate
+
+# Install dependencies
+npm install
+
+# Start Metro
+npm start
+
+# Pod install
+cd pod; pod install; cd ..
+
+# Run iOS
+npm run ios
+```
+
 
 ## How to rename the project to use for your project
 
