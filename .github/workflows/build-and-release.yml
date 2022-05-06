@@ -21,11 +21,11 @@ jobs:
         with:
           node-version: 16
 
+      - name: Install dependencies
+        run: npm ci
+
       - name: Build Android
-        id: build_android
-        run: |
-          npm ci
-          npm run android:release
+        run: npm run android:release
 
       - name: Archive code coverage results
         uses: actions/upload-artifact@v3
@@ -45,11 +45,15 @@ jobs:
         with:
           node-version: 16
 
-      - name: Build Android
-        id: build_android
-        run: |
-          npm ci
-          npm run ios:build
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Install pod dependencies
+        working-directory: ios
+        run: pod install
+
+      - name: Build iOS
+        run: npm run ios:build
 
   # release:
   #   name: Release
