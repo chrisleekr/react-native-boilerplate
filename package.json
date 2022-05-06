@@ -13,7 +13,7 @@
     "test:update": "jest  --coverage --updateSnapshot",
     "lint:eslint": "eslint .",
     "lint:prettier": "prettier --check src/**/*.js",
-    "ios:bundle": "react-native bundle --dev false --entry-file index.ios.js --bundle-output ios/main.jsbundle --platform ios",
+    "ios:bundle": "react-native bundle --dev false --entry-file index.js --bundle-output ios/main.jsbundle --platform ios --assets-dest ios",
     "ios:build": "react-native run-ios --configuration Release",
     "android:clean": "cd android && ./gradlew clean",
     "android:build-debug": "cd android/ && ./gradlew assembleDebug",

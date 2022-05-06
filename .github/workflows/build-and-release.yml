@@ -1,6 +1,7 @@
 name: Build & Release
 
 on:
+  push:
   repository_dispatch:
     types: [Build & Release]
 
@@ -55,14 +56,14 @@ jobs:
 
       - name: Build iOS
         run: |
-          npm run ios:build
-          mv ios/build/output.ipa iOS-release.ipa
+          npm run ios:release
+          cp -R $HOME/Library/Developer/Xcode/DerivedData/**/Build/**/*.app iOS-release.app
 
       - name: Archive iOS IPA file
         uses: actions/upload-artifact@v3
         with:
-          name: ios-ipa
-          path: iOS-release.ipa
+          name: ios-app
+          path: iOS-release.app
 
   release:
     name: Release
