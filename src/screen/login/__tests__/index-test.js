@@ -40,11 +40,22 @@ const component = (
   </ThemeProvider>
 );
 
+spyUseSelector = jest.spyOn(redux, 'useSelector');
+spyUseDispatch = jest.spyOn(redux, 'useDispatch');
+
 describe('LoginScreen', () => {
   afterEach(cleanup);
 
   beforeEach(() => {
     spyLogin.mockImplementation(mockLogin);
+    state = {
+      auth: {
+        loading: 'idle',
+        errors: []
+      }
+    };
+    spyUseSelector.mockImplementation(cb => cb(state));
+    spyUseDispatch.mockReturnValue(mockUseDispatch);
   });
 
   beforeEach(async () => {
@@ -201,16 +212,13 @@ describe('LoginScreen', () => {
 
   describe('shows errors from slice', () => {
     beforeEach(async () => {
-      spyUseSelector = jest.spyOn(redux, 'useSelector');
-      spyUseDispatch = jest.spyOn(redux, 'useDispatch');
       state = {
         auth: {
-          loading: false,
+          loading: 'idle',
           errors: ['Custom error']
         }
       };
       spyUseSelector.mockImplementation(cb => cb(state));
-      spyUseDispatch.mockReturnValue(mockUseDispatch);
 
       rendered = render(component);
 
@@ -219,6 +227,10 @@ describe('LoginScreen', () => {
 
     it('matches snapshot', () => {
       expect(rendered.toJSON()).toMatchSnapshot();
+    });
+
+    it('renders errors', () => {
+      expect(rendered.queryByText('Custom error')).toBeTruthy();
     });
   });
 });

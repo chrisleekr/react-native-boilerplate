@@ -1122,7 +1122,7 @@ exports[`LoginScreen shows errors from slice matches snapshot 1`] = `
     <View
       accessibilityState={
         Object {
-          "disabled": true,
+          "disabled": false,
         }
       }
       accessible={true}
@@ -1138,7 +1138,7 @@ exports[`LoginScreen shows errors from slice matches snapshot 1`] = `
       style={
         Object {
           "alignItems": "center",
-          "backgroundColor": "rgba(0, 0, 0, 0.26)",
+          "backgroundColor": "#6200EE",
           "borderColor": "black",
           "borderWidth": 1,
           "flexDirection": "row",
@@ -1154,26 +1154,12 @@ exports[`LoginScreen shows errors from slice matches snapshot 1`] = `
       }
       testID="login-button"
     >
-      <View
-        style={
-          Array [
-            Object {
-              "marginRight": 5,
-            },
-          ]
-        }
-        testID="activity-indicator"
-      >
-        <ActivityIndicator
-          color="#ffffff"
-        />
-      </View>
       <Text
         style={
           Array [
             undefined,
             Object {
-              "color": "#000000",
+              "color": "#ffffff",
             },
           ]
         }
