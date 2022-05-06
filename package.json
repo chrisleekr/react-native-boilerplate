@@ -151,7 +151,7 @@
       "eslint --fix",
       "prettier --write",
       "git add",
-      "npm run test -- --coverageThreshold '{}'"
+      "npm run test ."
     ]
   }
 }

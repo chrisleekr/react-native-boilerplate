@@ -107,7 +107,7 @@ export default function TodoScreen({testID}) {
                 color: theme.buttonDisabledColor
               }
             ]}>
-            Please add new todo.
+            <Text>Please add new todo.</Text>
           </View>
         ) : null}
         {todoOngoing.length > 0
