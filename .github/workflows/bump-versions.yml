@@ -12,6 +12,9 @@ jobs:
       - name: Checkout source code
         uses: actions/checkout@v2
 
+      - name: Install dependencies
+        run: npm ci
+
       - id: bump-version
         name: Bump Version (Patch)
         if:
