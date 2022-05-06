@@ -4,8 +4,41 @@ This document describes the process for running this application on your local c
 
 ## Getting started
 
-TBD
 
+### Android
+
+```bash
+# Clone the repository
+git clone https://github.com/chrisleekr/react-native-boilerplate
+
+# Install dependencies
+npm install
+
+# Start Metro
+npm start
+
+# Run Android
+npm run android
+```
+
+### iOS
+
+```bash
+# Clone the repository
+git clone https://github.com/chrisleekr/react-native-boilerplate
+
+# Install dependencies
+npm install
+
+# Start Metro
+npm start
+
+# Pod install
+cd pod; pod install; cd ..
+
+# Run iOS
+npm run ios
+```
 ## Branch naming conventions
 
 The project enforces the branch name.
