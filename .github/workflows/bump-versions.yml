@@ -25,8 +25,6 @@ jobs:
           git config --global user.name "$GITHUB_ACTOR"
           # Version up for package!
           PACKAGE_VERSION=$(npm version patch -m "bump: update version to %s [skip ci]")
-          # Version up for Apps!
-          npm run postversion
           # Create release
           git push https://$GITHUB_ACTOR:${{ secrets.GITHUB_TOKEN }}@github.com/chrisleekr/react-native-boilerplate HEAD:$GITHUB_REF
           git push https://$GITHUB_ACTOR:${{ secrets.GITHUB_TOKEN }}@github.com/chrisleekr/react-native-boilerplate $PACKAGE_VERSION
