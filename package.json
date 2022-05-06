@@ -1,6 +1,6 @@
 {
   "name": "react-native-boilerplate",
-  "version": "0.0.3",
+  "version": "0.0.6",
   "description": "React Native Boilerplate with React Redux Toolkit, Navigation, Redux Persist, JWT Authentication and more",
   "scripts": {
     "prepare": "husky install",
