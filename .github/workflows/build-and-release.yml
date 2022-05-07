@@ -57,7 +57,7 @@ jobs:
       - name: Build iOS
         run: |
           npm run ios:build
-          cp -R $HOME/Library/Developer/Xcode/DerivedData/**/Build/**/*.app iOS-release.app
+          cp -R $HOME/Library/Developer/Xcode/DerivedData/ReactNativeBoilerplate-*/Build/Products/Release-iphonesimulator/*.app iOS-release.app
 
       - name: Archive iOS IPA file
         uses: actions/upload-artifact@v3
