@@ -29,19 +29,7 @@ https://user-images.githubusercontent.com/5715919/166450457-04eaab8b-5d21-43ea-b
 
 ## How to run in your local
 
-```bash
-# Clone the repository
-git clone https://github.com/chrisleekr/react-native-boilerplate
-
-# Install dependencies
-npm install
-
-# Start Metro
-npm start
-
-# Run Android
-npm run android
-```
+See [development.md](https://github.com/chrisleekr/react-native-boilerplate/blob/main/DEVELOPMENT.md#getting-started)
 
 ## How to rename the project to use for your project
 
@@ -57,7 +45,8 @@ $ $ npx react-native-rename "Travel App" -b com.junedomingo.travelapp
 
 ## Todo
 
+- [ ] Optimise with wdyr
 - [ ] Add iOS build to Github actions
 - [ ] Add E2E tests
-- [ ] Push notification
-- [ ] React Native Biometrics
+- [ ] Add push notification
+- [ ] Add React Native Biometrics

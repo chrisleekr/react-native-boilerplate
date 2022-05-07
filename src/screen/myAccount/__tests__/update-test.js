@@ -70,7 +70,7 @@ describe('MyAccountUpdateScreen', () => {
     expect(rendered.toJSON()).toMatchSnapshot();
   });
 
-  it(`shows username`, () => {
+  it('shows username', () => {
     expect(rendered.queryByText('chrislee')).toBeTruthy();
   });
 

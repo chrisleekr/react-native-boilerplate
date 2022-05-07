@@ -5717,7 +5717,9 @@ exports[`TodoScreen with login without any list matches snapshot 1`] = `
         }
         testID="no-list"
       >
-        Please add new todo.
+        <Text>
+          Please add new todo.
+        </Text>
       </View>
     </View>
   </RCTScrollView>
