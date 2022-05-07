@@ -1,7 +1,6 @@
 name: Build & Release
 
 on:
-  push:
   repository_dispatch:
     types: [Build & Release]
 
@@ -32,7 +31,7 @@ jobs:
       - name: Archive Android APK file
         uses: actions/upload-artifact@v3
         with:
-          name: android-apk
+          name: android
           path: android-release.apk
 
   build-ios:
@@ -59,10 +58,10 @@ jobs:
           npm run ios:build
           cp -R $HOME/Library/Developer/Xcode/DerivedData/ReactNativeBoilerplate-*/Build/Products/Release-iphonesimulator/*.app iOS-release.app
 
-      - name: Archive iOS IPA file
+      - name: Archive iOS app file
         uses: actions/upload-artifact@v3
         with:
-          name: ios-app
+          name: iOS
           path: iOS-release.app
 
   release:
@@ -76,17 +75,14 @@ jobs:
       - name: Download all workflow run artifacts
         uses: actions/download-artifact@v3
 
-      - name: Test
-        run: ls -al
-
-      # - name: Release
-      #   uses: softprops/action-gh-release@v1
-      #   with:
-      #     token: ${{ secrets.REPO_ACCESS_TOKEN }}
-      #     tag_name: ${{ github.event.client_payload.ref }}
-      #     name: '<Update release name for ${{ github.event.client_payload.ref }}>'
-      #     draft: true
-      #     prerelease: false
-      #     files: |
-      #       android-release.apk
-      #       iOS-release.ipa
+      - name: Release
+        uses: softprops/action-gh-release@v1
+        with:
+          token: ${{ secrets.REPO_ACCESS_TOKEN }}
+          tag_name: ${{ github.event.client_payload.ref }}
+          name: '<Update release name for ${{ github.event.client_payload.ref }}>'
+          draft: true
+          prerelease: false
+          files: |
+            android/android-release.apk
+            iOS/iOS-release.app
