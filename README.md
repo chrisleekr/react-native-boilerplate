@@ -37,10 +37,10 @@ You can use [react-native-rename](https://www.npmjs.com/package/react-native-ren
 
 ```bash
 # Clone the repository
-git clone https://github.com/chrisleekr/react-native-boilerplate
+$ git clone https://github.com/chrisleekr/react-native-boilerplate
 
 # Rename project
-$ $ npx react-native-rename "Travel App" -b com.junedomingo.travelapp
+$ npx react-native-rename "Travel App" -b com.junedomingo.travelapp
 ```
 
 ## Todo
