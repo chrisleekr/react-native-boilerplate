@@ -19,10 +19,10 @@
     "android:build-debug": "cd android/ && ./gradlew assembleDebug",
     "android:release": "cd android && ./gradlew assembleRelease --no-daemon",
     "android:bundle": "react-native bundle --platform android --dev false --entry-file ./index.js --bundle-output ./android/app/src/main/assets/index.bundle --sourcemap-output ./android/app/src/main/assets/index.map --assets-dest ./android/app/src/main/res/",
-    "e2e:build-ios": "detox build --configuration ios",
-    "e2e:build-android": "detox build --configuration android",
-    "e2e:run-ios": "detox test --configuration ios",
-    "e2e:run-android": "detox test --configuration android"
+    "e2e:android:build": "detox build --configuration android",
+    "e2e:android:run": "detox test --configuration android",
+    "e2e:ios:build": "detox build --configuration ios",
+    "e2e:ios:run": "detox test --configuration ios"
   },
   "repository": {
     "type": "git",
@@ -93,16 +93,16 @@
     "@testing-library/jest-native": "^4.0.4",
     "@testing-library/react-native": "^9.1.0",
     "@types/jest": "^27.5.0",
-    "@welldone-software/why-did-you-render": "^7.0.1",
-    "babel-jest": "^26.6.3",
-    "babel-plugin-transform-remove-console": "^6.9.4",
     "@web-bee-ru/branch-name-lint": "2.1.1",
+    "@welldone-software/why-did-you-render": "^7.0.1",
+    "babel-jest": "^27.5.1",
+    "babel-plugin-transform-remove-console": "^6.9.4",
     "detox": "^19.6.7",
     "eslint": "^7.32.0",
     "eslint-plugin-react-native": "^4.0.0",
     "husky": "^7.0.4",
-    "jest": "^26.6.3",
-    "jest-circus": "^26.6.3",
+    "jest": "^27.5.1",
+    "jest-circus": "^27.5.1",
     "lint-staged": "^12.4.1",
     "metro-react-native-babel-preset": "^0.67.0",
     "mockdate": "^3.0.5",
@@ -115,7 +115,7 @@
   "jest": {
     "preset": "react-native",
     "resetMocks": true,
-    "testEnvironment": "jsdom",
+    "testEnvironment": "node",
     "setupFilesAfterEnv": [
       "./jestSetup.js"
     ],
