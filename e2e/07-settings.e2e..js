@@ -1,5 +1,5 @@
 /* eslint-disable no-undef */
-describe('App', () => {
+describe('07-settings', () => {
   beforeAll(async () => {
     await device.launchApp({
       newInstance: true
