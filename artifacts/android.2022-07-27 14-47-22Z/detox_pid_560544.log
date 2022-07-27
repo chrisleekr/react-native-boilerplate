@@ -1,0 +1,533 @@
+Jul 28 00:47:23 detox[560544] TRACE: [DETOX_CREATE] created a Detox instance with config:
+{
+  appsConfig: {
+    default: {
+      type: 'android.apk',
+      binaryPath: 'android/app/build/outputs/apk/release/app-release.apk',
+      build: 'cd android && ./gradlew assembleRelease assembleAndroidTest -DtestBuildType=release && cd ..'
+    }
+  },
+  artifactsConfig: {
+    rootDir: 'artifacts/android.2022-07-27 14-47-22Z',
+    plugins: {
+      log: {
+        enabled: true,
+        keepOnlyFailedTestsArtifacts: false
+      },
+      screenshot: {
+        enabled: true,
+        shouldTakeAutomaticSnapshots: false,
+        keepOnlyFailedTestsArtifacts: false
+      },
+      video: {
+        enabled: false,
+        keepOnlyFailedTestsArtifacts: false
+      },
+      instruments: {
+        enabled: false,
+        keepOnlyFailedTestsArtifacts: false
+      },
+      timeline: {
+        enabled: false
+      },
+      uiHierarchy: {
+        enabled: false,
+        keepOnlyFailedTestsArtifacts: false
+      }
+    },
+    pathBuilder: ArtifactPathBuilder {
+      _rootDir: 'artifacts/android.2022-07-27 14-47-22Z'
+    }
+  },
+  behaviorConfig: {
+    init: {
+      reinstallApp: true,
+      exposeGlobals: true
+    },
+    cleanup: {
+      shutdownDevice: false
+    },
+    launchApp: 'auto'
+  },
+  cliConfig: {
+    recordLogs: 'all',
+    configuration: 'android',
+    loglevel: 'verbose',
+    useCustomLogger: true
+  },
+  configurationName: 'android',
+  deviceConfig: {
+    type: 'android.emulator',
+    device: {
+      avdName: 'Pixel_5_API_28'
+    }
+  },
+  runnerConfig: {
+    testRunner: 'jest',
+    runnerConfig: 'e2e/config.json',
+    specs: 'e2e',
+    skipLegacyWorkersInjection: false
+  },
+  sessionConfig: {
+    autoStart: true,
+    sessionId: '7c4f1a21-821c-6cb2-dc9a-d277388fde53',
+    debugSynchronization: 10000
+  }
+}
+Jul 28 00:47:23 detox[560544] DEBUG: [WSS_CREATE] Detox server listening on localhost:36813...
+Jul 28 00:47:23 detox[560544] DEBUG: [WSS_CONNECTION, #51304] registered a new connection.
+Jul 28 00:47:23 detox[560544] TRACE: [WS_OPEN] opened web socket to: ws://localhost:36813
+Jul 28 00:47:23 detox[560544] TRACE: [WS_SEND] {"type":"login","params":{"sessionId":"7c4f1a21-821c-6cb2-dc9a-d277388fde53","role":"tester"},"messageId":0}
+Jul 28 00:47:23 detox[560544] TRACE: [WSS_GET_FROM, #51304] {"type":"login","params":{"sessionId":"7c4f1a21-821c-6cb2-dc9a-d277388fde53","role":"tester"},"messageId":0}
+Jul 28 00:47:23 detox[560544] TRACE: [SESSION_CREATED] created session 7c4f1a21-821c-6cb2-dc9a-d277388fde53
+Jul 28 00:47:23 detox[560544] TRACE: [WSS_SEND_TO, #tester] {"type":"loginSuccess","params":{"testerConnected":true,"appConnected":false},"messageId":0}
+Jul 28 00:47:23 detox[560544] TRACE: [SESSION_JOINED] tester joined session 7c4f1a21-821c-6cb2-dc9a-d277388fde53
+Jul 28 00:47:23 detox[560544] TRACE: [WS_MESSAGE] {"type":"loginSuccess","params":{"testerConnected":true,"appConnected":false},"messageId":0}
+ 
+Jul 28 00:47:23 detox[560544] DEBUG: [EXEC_CMD, #0] "/opt/android-sdk/emulator/emulator" -list-avds --verbose
+Jul 28 00:47:23 detox[560544] TRACE: [EXEC_SUCCESS, #0] Pixel_5_API_28
+
+Jul 28 00:47:23 detox[560544] DEBUG: [EXEC_CMD, #1] "/opt/android-sdk/emulator/emulator" -version 
+Jul 28 00:47:23 detox[560544] TRACE: [EXEC_SUCCESS, #1] Android emulator version 31.2.10.0 (build_id 8420304) (CL:N/A)
+Copyright (C) 2006-2017 The Android Open Source Project and many others.
+This program is a derivative of the QEMU CPU emulator (www.qemu.org).
+
+  This software is licensed under the terms of the GNU General Public
+  License version 2, as published by the Free Software Foundation, and
+  may be copied, distributed, and modified under those terms.
+
+  This program is distributed in the hope that it will be useful,
+  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  GNU General Public License for more details.
+
+
+Jul 28 00:47:23 detox[560544] DEBUG: [EMU_BIN_VERSION_DETECT] Detected emulator binary version { major: 31, minor: 2, patch: 10, toString: [Function: toString] }
+Jul 28 00:47:23 detox[560544] DEBUG: [ALLOCATE_DEVICE] Trying to allocate a device based on "Pixel_5_API_28"
+Jul 28 00:47:23 detox[560544] DEBUG: [EXEC_CMD, #2] "/opt/android-sdk/platform-tools/adb"  devices
+Jul 28 00:47:23 detox[560544] DEBUG: [EXEC_SUCCESS, #2] List of devices attached
+emulator-16582	device
+
+
+Jul 28 00:47:23 detox[560544] TRACE: [TELNET_CONNECTING] port: 16582, host: localhost
+Jul 28 00:47:23 detox[560544] DEBUG: [DEVICE_LOOKUP] Found a matching & free device emulator-16582
+Jul 28 00:47:23 detox[560544] DEBUG: [ALLOCATE_DEVICE] Settled on emulator-16582
+Jul 28 00:47:23 detox[560544] DEBUG: [EXEC_CMD, #3] "/opt/android-sdk/platform-tools/adb" -s emulator-16582 shell "getprop dev.bootcomplete"
+Jul 28 00:47:23 detox[560544] TRACE: [EXEC_SUCCESS, #3] 1
+
+Jul 28 00:47:23 detox[560544] TRACE: [ARTIFACTS_LIFECYCLE] artifactsManager.onBootDevice({ deviceId: 'emulator-16582', type: 'Pixel_5_API_28', coldBoot: false })
+Jul 28 00:47:23 detox[560544] DEBUG: [EXEC_CMD, #4] "/opt/android-sdk/platform-tools/adb" -s emulator-16582 shell "getprop ro.build.version.sdk"
+Jul 28 00:47:23 detox[560544] TRACE: [EXEC_SUCCESS, #4] 28
+
+Jul 28 00:47:23 detox[560544] DEBUG: [EXEC_CMD, #5] "/opt/android-sdk/platform-tools/adb" -s emulator-16582 shell "settings put global animator_duration_scale 0"
+Jul 28 00:47:23 detox[560544] TRACE: [EXEC_SUCCESS, #5] 
+Jul 28 00:47:23 detox[560544] DEBUG: [EXEC_CMD, #6] "/opt/android-sdk/platform-tools/adb" -s emulator-16582 shell "settings put global window_animation_scale 0"
+Jul 28 00:47:23 detox[560544] TRACE: [EXEC_SUCCESS, #6] 
+Jul 28 00:47:23 detox[560544] DEBUG: [EXEC_CMD, #7] "/opt/android-sdk/platform-tools/adb" -s emulator-16582 shell "settings put global transition_animation_scale 0"
+Jul 28 00:47:23 detox[560544] TRACE: [EXEC_SUCCESS, #7] 
+Jul 28 00:47:23 detox[560544] DEBUG: [EXEC_CMD, #8] "/opt/android-sdk/platform-tools/adb" -s emulator-16582 shell "dumpsys power | grep \"^[ ]*m[UW].*=\""
+Jul 28 00:47:23 detox[560544] TRACE: [EXEC_SUCCESS, #8]   mWakefulness=Awake
+  mWakefulnessChanging=false
+  mWakeLockSummary=0x0
+  mUserActivitySummary=0x1
+  mWakeUpWhenPluggedOrUnpluggedConfig=false
+  mWakeUpWhenPluggedOrUnpluggedInTheaterModeConfig=false
+  mUserActivityTimeoutOverrideFromWindowManager=-1
+  mUserInactiveOverrideFromWindowManager=false
+
+Jul 28 00:47:23 detox[560544] DEBUG: [EXEC_CMD, #9] "/opt/android-sdk/build-tools/33.0.0-rc4/aapt" dump badging "/srv/github/react-native-bilerplate/android/app/build/outputs/apk/release/app-release.apk"
+Jul 28 00:47:23 detox[560544] TRACE: [EXEC_SUCCESS, #9] package: name='com.reactnativeboilerplate' versionCode='2' versionName='0.0.7' platformBuildVersionName='12' platformBuildVersionCode='31' compileSdkVersion='31' compileSdkVersionCodename='12'
+sdkVersion:'24'
+targetSdkVersion:'31'
+uses-permission: name='android.permission.INTERNET'
+uses-permission: name='android.permission.ACCESS_NETWORK_STATE'
+uses-permission: name='android.permission.ACCESS_WIFI_STATE'
+uses-permission: name='android.permission.USE_BIOMETRIC'
+uses-permission: name='android.permission.USE_FINGERPRINT'
+uses-permission: name='com.google.android.c2dm.permission.RECEIVE'
+uses-permission: name='com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE'
+application-label:'ReactNativeBoilerplate'
+application-label-af:'ReactNativeBoilerplate'
+application-label-am:'ReactNativeBoilerplate'
+application-label-ar:'ReactNativeBoilerplate'
+application-label-as:'ReactNativeBoilerplate'
+application-label-az:'ReactNativeBoilerplate'
+application-label-be:'ReactNativeBoilerplate'
+application-label-bg:'ReactNativeBoilerplate'
+application-label-bn:'ReactNativeBoilerplate'
+application-label-bs:'ReactNativeBoilerplate'
+application-label-ca:'ReactNativeBoilerplate'
+application-label-cs:'ReactNativeBoilerplate'
+application-label-da:'ReactNativeBoilerplate'
+application-label-de:'ReactNativeBoilerplate'
+application-label-el:'ReactNativeBoilerplate'
+application-label-en-AU:'ReactNativeBoilerplate'
+application-label-en-CA:'ReactNativeBoilerplate'
+application-label-en-GB:'ReactNativeBoilerplate'
+application-label-en-IN:'ReactNativeBoilerplate'
+application-label-en-XC:'ReactNativeBoilerplate'
+application-label-es:'ReactNativeBoilerplate'
+application-label-es-US:'ReactNativeBoilerplate'
+application-label-et:'ReactNativeBoilerplate'
+application-label-eu:'ReactNativeBoilerplate'
+application-label-fa:'ReactNativeBoilerplate'
+application-label-fi:'ReactNativeBoilerplate'
+application-label-fr:'ReactNativeBoilerplate'
+application-label-fr-CA:'ReactNativeBoilerplate'
+application-label-gl:'ReactNativeBoilerplate'
+application-label-gu:'ReactNativeBoilerplate'
+application-label-hi:'ReactNativeBoilerplate'
+application-label-hr:'ReactNativeBoilerplate'
+application-label-hu:'ReactNativeBoilerplate'
+application-label-hy:'ReactNativeBoilerplate'
+application-label-in:'ReactNativeBoilerplate'
+application-label-is:'ReactNativeBoilerplate'
+application-label-it:'ReactNativeBoilerplate'
+application-label-iw:'ReactNativeBoilerplate'
+application-label-ja:'ReactNativeBoilerplate'
+application-label-ka:'ReactNativeBoilerplate'
+application-label-kk:'ReactNativeBoilerplate'
+application-label-km:'ReactNativeBoilerplate'
+application-label-kn:'ReactNativeBoilerplate'
+application-label-ko:'ReactNativeBoilerplate'
+application-label-ky:'ReactNativeBoilerplate'
+application-label-lo:'ReactNativeBoilerplate'
+application-label-lt:'ReactNativeBoilerplate'
+application-label-lv:'ReactNativeBoilerplate'
+application-label-mk:'ReactNativeBoilerplate'
+application-label-ml:'ReactNativeBoilerplate'
+application-label-mn:'ReactNativeBoilerplate'
+application-label-mr:'ReactNativeBoilerplate'
+application-label-ms:'ReactNativeBoilerplate'
+application-label-my:'ReactNativeBoilerplate'
+application-label-nb:'ReactNativeBoilerplate'
+application-label-ne:'ReactNativeBoilerplate'
+application-label-nl:'ReactNativeBoilerplate'
+application-label-or:'ReactNativeBoilerplate'
+application-label-pa:'ReactNativeBoilerplate'
+application-label-pl:'ReactNativeBoilerplate'
+application-label-pt:'ReactNativeBoilerplate'
+application-label-pt-BR:'ReactNativeBoilerplate'
+application-label-pt-PT:'ReactNativeBoilerplate'
+application-label-ro:'ReactNativeBoilerplate'
+application-label-ru:'ReactNativeBoilerplate'
+application-label-si:'ReactNativeBoilerplate'
+application-label-sk:'ReactNativeBoilerplate'
+application-label-sl:'ReactNativeBoilerplate'
+application-label-sq:'ReactNativeBoilerplate'
+application-label-sr:'ReactNativeBoilerplate'
+application-label-sr-Latn:'ReactNativeBoilerplate'
+application-label-sv:'ReactNativeBoilerplate'
+application-label-sw:'ReactNativeBoilerplate'
+application-label-ta:'ReactNativeBoilerplate'
+application-label-te:'ReactNativeBoilerplate'
+application-label-th:'ReactNativeBoilerplate'
+application-label-tl:'ReactNativeBoilerplate'
+application-label-tr:'ReactNativeBoilerplate'
+application-label-uk:'ReactNativeBoilerplate'
+application-label-ur:'ReactNativeBoilerplate'
+application-label-uz:'ReactNativeBoilerplate'
+application-label-vi:'ReactNativeBoilerplate'
+application-label-zh-CN:'ReactNativeBoilerplate'
+application-label-zh-HK:'ReactNativeBoilerplate'
+application-label-zh-TW:'ReactNativeBoilerplate'
+application-label-zu:'ReactNativeBoilerplate'
+application-icon-120:'res/u3.png'
+application-icon-160:'res/u3.png'
+application-icon-240:'res/SD.png'
+application-icon-320:'res/jy.png'
+application-icon-480:'res/D2.png'
+application-icon-640:'res/CG.png'
+application-icon-65534:'res/u3.png'
+application: label='ReactNativeBoilerplate' icon='res/u3.png'
+launchable-activity: name='com.reactnativeboilerplate.MainActivity'  label='ReactNativeBoilerplate' icon=''
+feature-group: label=''
+  uses-feature: name='android.hardware.faketouch'
+  uses-implied-feature: name='android.hardware.faketouch' reason='default feature for all apps'
+  uses-feature: name='android.hardware.wifi'
+  uses-implied-feature: name='android.hardware.wifi' reason='requested android.permission.ACCESS_WIFI_STATE permission'
+main
+other-activities
+supports-screens: 'small' 'normal' 'large' 'xlarge'
+supports-any-density: 'true'
+locales: '--_--' 'af' 'am' 'ar' 'as' 'az' 'be' 'bg' 'bn' 'bs' 'ca' 'cs' 'da' 'de' 'el' 'en-AU' 'en-CA' 'en-GB' 'en-IN' 'en-XC' 'es' 'es-US' 'et' 'eu' 'fa' 'fi' 'fr' 'fr-CA' 'gl' 'gu' 'hi' 'hr' 'hu' 'hy' 'in' 'is' 'it' 'iw' 'ja' 'ka' 'kk' 'km' 'kn' 'ko' 'ky' 'lo' 'lt' 'lv' 'mk' 'ml' 'mn' 'mr' 'ms' 'my' 'nb' 'ne' 'nl' 'or' 'pa' 'pl' 'pt' 'pt-BR' 'pt-PT' 'ro' 'ru' 'si' 'sk' 'sl' 'sq' 'sr' 'sr-Latn' 'sv' 'sw' 'ta' 'te' 'th' 'tl' 'tr' 'uk' 'ur' 'uz' 'vi' 'zh-CN' 'zh-HK' 'zh-TW' 'zu'
+densities: '120' '160' '240' '320' '480' '640' '65534'
+native-code: 'arm64-v8a' 'armeabi' 'armeabi-v7a' 'x86' 'x86_64'
+
+Jul 28 00:47:23 detox[560544] TRACE: [ARTIFACTS_LIFECYCLE] artifactsManager.onBeforeTerminateApp({ deviceId: 'emulator-16582', bundleId: 'com.reactnativeboilerplate' })
+Jul 28 00:47:23 detox[560544] DEBUG: [EXEC_CMD, #10] "/opt/android-sdk/platform-tools/adb" -s emulator-16582 shell "am force-stop com.reactnativeboilerplate"
+Jul 28 00:47:23 detox[560544] TRACE: [EXEC_SUCCESS, #10] 
+Jul 28 00:47:23 detox[560544] TRACE: [ARTIFACTS_LIFECYCLE] artifactsManager.onTerminateApp({ deviceId: 'emulator-16582', bundleId: 'com.reactnativeboilerplate' })
+Jul 28 00:47:23 detox[560544] TRACE: [ARTIFACTS_LIFECYCLE] artifactsManager.onBeforeUninstallApp({ deviceId: 'emulator-16582', bundleId: 'com.reactnativeboilerplate' })
+Jul 28 00:47:23 detox[560544] DEBUG: [EXEC_CMD, #11] "/opt/android-sdk/platform-tools/adb" -s emulator-16582 shell "pm list packages com.reactnativeboilerplate"
+Jul 28 00:47:23 detox[560544] TRACE: [EXEC_SUCCESS, #11] package:com.reactnativeboilerplate
+package:com.reactnativeboilerplate.test
+
+Jul 28 00:47:23 detox[560544] DEBUG: [EXEC_CMD, #12] "/opt/android-sdk/platform-tools/adb" -s emulator-16582 uninstall com.reactnativeboilerplate
+Jul 28 00:47:23 detox[560544] TRACE: [EXEC_SUCCESS, #12] Success
+
+Jul 28 00:47:23 detox[560544] DEBUG: [EXEC_CMD, #13] "/opt/android-sdk/platform-tools/adb" -s emulator-16582 shell "pm list packages com.reactnativeboilerplate.test"
+Jul 28 00:47:23 detox[560544] TRACE: [EXEC_SUCCESS, #13] package:com.reactnativeboilerplate.test
+
+Jul 28 00:47:23 detox[560544] DEBUG: [EXEC_CMD, #14] "/opt/android-sdk/platform-tools/adb" -s emulator-16582 uninstall com.reactnativeboilerplate.test
+Jul 28 00:47:23 detox[560544] TRACE: [EXEC_SUCCESS, #14] Success
+
+Jul 28 00:47:23 detox[560544] TRACE: [ARTIFACTS_LIFECYCLE] artifactsManager.onBeforeTerminateApp({ deviceId: 'emulator-16582', bundleId: 'com.reactnativeboilerplate' })
+Jul 28 00:47:23 detox[560544] DEBUG: [EXEC_CMD, #15] "/opt/android-sdk/platform-tools/adb" -s emulator-16582 shell "am force-stop com.reactnativeboilerplate"
+Jul 28 00:47:23 detox[560544] TRACE: [EXEC_SUCCESS, #15] 
+Jul 28 00:47:23 detox[560544] TRACE: [ARTIFACTS_LIFECYCLE] artifactsManager.onTerminateApp({ deviceId: 'emulator-16582', bundleId: 'com.reactnativeboilerplate' })
+Jul 28 00:47:23 detox[560544] DEBUG: [EXEC_CMD, #16] "/opt/android-sdk/build-tools/33.0.0-rc4/aapt" dump xmlstrings "/srv/github/react-native-bilerplate/android/app/build/outputs/apk/release/app-release.apk" AndroidManifest.xml
+Jul 28 00:47:23 detox[560544] TRACE: [EXEC_SUCCESS, #16] String pool of 60 unique UTF-16 non-sorted strings, 60 entries and 0 styles using 3064 bytes:
+String #0: theme
+String #1: label
+String #2: icon
+String #3: name
+String #4: exported
+String #5: authorities
+String #6: launchMode
+String #7: configChanges
+String #8: value
+String #9: minSdkVersion
+String #10: versionCode
+String #11: versionName
+String #12: windowSoftInputMode
+String #13: targetSdkVersion
+String #14: allowBackup
+String #15: extractNativeLibs
+String #16: networkSecurityConfig
+String #17: roundIcon
+String #18: compileSdkVersion
+String #19: compileSdkVersionCodename
+String #20: appComponentFactory
+String #21: 0.0.7
+String #22: 12
+String #23: GlideModule
+String #24: action
+String #25: activity
+String #26: android
+String #27: android.intent.action.MAIN
+String #28: android.intent.category.LAUNCHER
+String #29: android.permission.ACCESS_NETWORK_STATE
+String #30: android.permission.ACCESS_WIFI_STATE
+String #31: android.permission.INTERNET
+String #32: android.permission.USE_BIOMETRIC
+String #33: android.permission.USE_FINGERPRINT
+String #34: androidx.core.app.CoreComponentFactory
+String #35: androidx.emoji2.text.EmojiCompatInitializer
+String #36: androidx.lifecycle.ProcessLifecycleInitializer
+String #37: androidx.startup
+String #38: androidx.startup.InitializationProvider
+String #39: application
+String #40: category
+String #41: com.bumptech.glide.integration.okhttp3.OkHttpGlideModule
+String #42: com.google.android.c2dm.permission.RECEIVE
+String #43: com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE
+String #44: com.google.android.gms.common.api.GoogleApiActivity
+String #45: com.google.android.gms.version
+String #46: com.reactnativeboilerplate
+String #47: com.reactnativeboilerplate.MainActivity
+String #48: com.reactnativeboilerplate.MainApplication
+String #49: com.reactnativeboilerplate.androidx-startup
+String #50: http://schemas.android.com/apk/res/android
+String #51: intent-filter
+String #52: manifest
+String #53: meta-data
+String #54: package
+String #55: platformBuildVersionCode
+String #56: platformBuildVersionName
+String #57: provider
+String #58: uses-permission
+String #59: uses-sdk
+
+Jul 28 00:47:23 detox[560544] DEBUG: [EXEC_CMD, #17] "/opt/android-sdk/build-tools/33.0.0-rc4/aapt" dump xmlstrings "/srv/github/react-native-bilerplate/android/app/build/outputs/apk/androidTest/release/app-release-androidTest.apk" AndroidManifest.xml
+Jul 28 00:47:23 detox[560544] TRACE: [EXEC_SUCCESS, #17] String pool of 41 unique UTF-16 non-sorted strings, 41 entries and 0 styles using 2112 bytes:
+String #0: theme
+String #1: label
+String #2: name
+String #3: exported
+String #4: targetPackage
+String #5: handleProfiling
+String #6: functionalTest
+String #7: minSdkVersion
+String #8: targetSdkVersion
+String #9: extractNativeLibs
+String #10: compileSdkVersion
+String #11: compileSdkVersionCodename
+String #12: 12
+String #13: Tests for com.reactnativeboilerplate
+String #14: action
+String #15: activity
+String #16: android
+String #17: android.intent.action.MAIN
+String #18: android.permission.REORDER_TASKS
+String #19: android.test.runner
+String #20: androidx.test.core.app.InstrumentationActivityInvoker$BootstrapActivity
+String #21: androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity
+String #22: androidx.test.core.app.InstrumentationActivityInvoker$EmptyFloatingActivity
+String #23: androidx.test.orchestrator
+String #24: androidx.test.runner.AndroidJUnitRunner
+String #25: androidx.test.services
+String #26: application
+String #27: com.google.android.apps.common.testing.services
+String #28: com.reactnativeboilerplate
+String #29: com.reactnativeboilerplate.test
+String #30: http://schemas.android.com/apk/res/android
+String #31: instrumentation
+String #32: intent-filter
+String #33: manifest
+String #34: package
+String #35: platformBuildVersionCode
+String #36: platformBuildVersionName
+String #37: queries
+String #38: uses-library
+String #39: uses-permission
+String #40: uses-sdk
+
+Jul 28 00:47:23 detox[560544] DEBUG: [EXEC_CMD, #18] "/opt/android-sdk/platform-tools/adb" -s emulator-16582 shell "rm -fr /data/local/tmp/detox"
+Jul 28 00:47:23 detox[560544] TRACE: [EXEC_SUCCESS, #18] 
+Jul 28 00:47:23 detox[560544] DEBUG: [EXEC_CMD, #19] "/opt/android-sdk/platform-tools/adb" -s emulator-16582 shell "mkdir -p /data/local/tmp/detox"
+Jul 28 00:47:23 detox[560544] TRACE: [EXEC_SUCCESS, #19] 
+Jul 28 00:47:23 detox[560544] DEBUG: [EXEC_CMD, #20] "/opt/android-sdk/platform-tools/adb" -s emulator-16582 push "/srv/github/react-native-bilerplate/android/app/build/outputs/apk/release/app-release.apk" "/data/local/tmp/detox/Application.apk"
+Jul 28 00:47:23 detox[560544] TRACE: [EXEC_SUCCESS, #20] /srv/github/react-native-bilerplate/android/app/build/outputs/apk/release/app-release.apk: 1 file pushed, 0 skipped. 452.3 MB/s (24889465 bytes in 0.052s)
+
+Jul 28 00:47:23 detox[560544] DEBUG: [SPAWN_CMD, #21, cpid=560951] /opt/android-sdk/platform-tools/adb -s emulator-16582 shell pm install -r -g -t /data/local/tmp/detox/Application.apk
+Jul 28 00:47:24 detox[560544] TRACE: [SPAWN_STDOUT, #21, cpid=560951] Success
+
+Jul 28 00:47:24 detox[560544] DEBUG: [SPAWN_END, #21, cpid=560951] /opt/android-sdk/platform-tools/adb -s emulator-16582 shell pm install -r -g -t /data/local/tmp/detox/Application.apk exited with code #0
+Jul 28 00:47:24 detox[560544] DEBUG: [EXEC_CMD, #22] "/opt/android-sdk/platform-tools/adb" -s emulator-16582 push "/srv/github/react-native-bilerplate/android/app/build/outputs/apk/androidTest/release/app-release-androidTest.apk" "/data/local/tmp/detox/Test.apk"
+Jul 28 00:47:24 detox[560544] TRACE: [EXEC_SUCCESS, #22] /srv/github/react-native-bilerplate/android/app/build/outputs/apk/androidTest/release/app-release-androidTest.apk: 1 file pushed, 0 skipped. 3638.6 MB/s (1765319 bytes in 0.000s)
+
+Jul 28 00:47:24 detox[560544] DEBUG: [SPAWN_CMD, #23, cpid=561300] /opt/android-sdk/platform-tools/adb -s emulator-16582 shell pm install -r -g -t /data/local/tmp/detox/Test.apk
+Jul 28 00:47:25 detox[560544] TRACE: [SPAWN_STDOUT, #23, cpid=561300] Success
+
+Jul 28 00:47:25 detox[560544] DEBUG: [SPAWN_END, #23, cpid=561300] /opt/android-sdk/platform-tools/adb -s emulator-16582 shell pm install -r -g -t /data/local/tmp/detox/Test.apk exited with code #0
+Jul 28 00:47:25 ROOT_DESCRIBE_BLOCK[560544] TRACE: [ARTIFACTS_LIFECYCLE] artifactsManager.onRunDescribeStart({ name: 'ROOT_DESCRIBE_BLOCK' })
+Jul 28 00:47:25 01-onboarding[560544] TRACE: [ARTIFACTS_LIFECYCLE] artifactsManager.onRunDescribeStart({ name: '01-onboarding' })
+Jul 28 00:47:25 detox[560544] INFO:  [97m01-onboarding[39m is assigned to [94memulator-16582 (Pixel_5_API_28)[39m
+Jul 28 00:47:25 detox[560544] TRACE: [ARTIFACTS_LIFECYCLE] artifactsManager.onBeforeTerminateApp({ deviceId: 'emulator-16582', bundleId: 'com.reactnativeboilerplate' })
+Jul 28 00:47:25 detox[560544] DEBUG: [EXEC_CMD, #24] "/opt/android-sdk/platform-tools/adb" -s emulator-16582 shell "am force-stop com.reactnativeboilerplate"
+Jul 28 00:47:25 detox[560544] TRACE: [EXEC_SUCCESS, #24] 
+Jul 28 00:47:25 detox[560544] TRACE: [ARTIFACTS_LIFECYCLE] artifactsManager.onTerminateApp({ deviceId: 'emulator-16582', bundleId: 'com.reactnativeboilerplate' })
+Jul 28 00:47:25 detox[560544] TRACE: [ARTIFACTS_LIFECYCLE] artifactsManager.onBeforeLaunchApp({
+  deviceId: 'emulator-16582',
+  bundleId: 'com.reactnativeboilerplate',
+  launchArgs: {
+    detoxServer: 'ws://localhost:36813',
+    detoxSessionId: '7c4f1a21-821c-6cb2-dc9a-d277388fde53'
+  }
+})
+Jul 28 00:47:25 detox[560544] DEBUG: [EXEC_CMD, #25] "/opt/android-sdk/platform-tools/adb" -s emulator-16582 shell "date +\"%m-%d %T.000\""
+Jul 28 00:47:25 detox[560544] TRACE: [EXEC_SUCCESS, #25] 07-27 14:47:25.000
+
+Jul 28 00:47:25 detox[560544] DEBUG: [EXEC_CMD, #26] "/opt/android-sdk/platform-tools/adb" -s emulator-16582 reverse tcp:36813 tcp:36813
+Jul 28 00:47:25 detox[560544] TRACE: [EXEC_SUCCESS, #26] 
+Jul 28 00:47:25 detox[560544] DEBUG: [EXEC_CMD, #27] "/opt/android-sdk/platform-tools/adb" -s emulator-16582 shell "pm list instrumentation"
+Jul 28 00:47:25 detox[560544] TRACE: [EXEC_SUCCESS, #27] instrumentation:com.reactnativeboilerplate.test/androidx.test.runner.AndroidJUnitRunner (target=com.reactnativeboilerplate)
+instrumentation:org.chromium.webview_shell/.WebViewLayoutTestRunner (target=org.chromium.webview_shell)
+
+Jul 28 00:47:25 detox[560544] DEBUG: [SPAWN_CMD, #28, cpid=561654] /opt/android-sdk/platform-tools/adb -s emulator-16582 shell am instrument -w -r -e detoxServer ws://localhost:36813 -e detoxSessionId 7c4f1a21-821c-6cb2-dc9a-d277388fde53 -e debug false com.reactnativeboilerplate.test/androidx.test.runner.AndroidJUnitRunner
+Jul 28 00:47:26 detox[560544] DEBUG: [EXEC_CMD, #29] "/opt/android-sdk/platform-tools/adb" -s emulator-16582 shell "ps | grep \"com\.reactnativeboilerplate$\""
+Jul 28 00:47:26 detox[560544] TRACE: [EXEC_SUCCESS, #29] u0_a116      12433  1778 1441000 106904 0                   0 S com.reactnativeboilerplate
+
+Jul 28 00:47:26 detox[12433] TRACE: [ARTIFACTS_LIFECYCLE] artifactsManager.onLaunchApp({
+  deviceId: 'emulator-16582',
+  bundleId: 'com.reactnativeboilerplate',
+  launchArgs: {
+    detoxServer: 'ws://localhost:36813',
+    detoxSessionId: '7c4f1a21-821c-6cb2-dc9a-d277388fde53'
+  },
+  pid: 12433
+})
+Jul 28 00:47:26 detox[560544] TRACE: [ARTIFACT_START] starting ADBLogcatRecording
+Jul 28 00:47:26 detox[560544] DEBUG: [SPAWN_CMD, #30, cpid=562003] /opt/android-sdk/platform-tools/adb -s emulator-16582 shell "logcat -T \"07-27 14:47:25.000\" --pid=12433 -f /sdcard/0472356_0.log"
+Jul 28 00:47:26 detox[560544] TRACE: [SPAWN_STDOUT, #28, cpid=561654] INSTRUMENTATION_STATUS: class=com.reactnativeboilerplate.DetoxTest
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=
+com.reactnativeboilerplate.DetoxTest:
+INSTRUMENTATION_STATUS: test=runDetoxTests
+INSTRUMENTATION_STATUS_CODE: 1
+
+Jul 28 00:47:26 detox[560544] TRACE: [SPAWN_STDOUT, #28, cpid=561654] INSTRUMENTATION_RESULT: shortMsg=Process crashed.
+INSTRUMENTATION_CODE: 0
+
+Jul 28 00:47:26 detox[560544] DEBUG: [SPAWN_END, #28, cpid=561654] /opt/android-sdk/platform-tools/adb -s emulator-16582 shell am instrument -w -r -e detoxServer ws://localhost:36813 -e detoxSessionId 7c4f1a21-821c-6cb2-dc9a-d277388fde53 -e debug false com.reactnativeboilerplate.test/androidx.test.runner.AndroidJUnitRunner exited with code #0
+Jul 28 00:47:26 detox[560544] DEBUG: [EXEC_CMD, #31] "/opt/android-sdk/platform-tools/adb" -s emulator-16582 reverse --remove tcp:36813
+Jul 28 00:47:26 detox[560544] TRACE: [ARTIFACTS_LIFECYCLE] artifactsManager.onHookFailure({
+  error: DetoxRuntimeError: Failed to run application on the device
+  
+  HINT: Most likely, your tests have timed out and called detox.cleanup() while it was waiting for "ready" message (over WebSocket) from the instrumentation process.
+      at _callee$ (/srv/github/react-native-bilerplate/e2e/01-onboarding.e2e.js:4:18)
+      at tryCatch (/srv/github/react-native-bilerplate/node_modules/@babel/runtime/helpers/regeneratorRuntime.js:86:17)
+      at Generator._invoke (/srv/github/react-native-bilerplate/node_modules/@babel/runtime/helpers/regeneratorRuntime.js:66:24)
+      at Generator.next (/srv/github/react-native-bilerplate/node_modules/@babel/runtime/helpers/regeneratorRuntime.js:117:21)
+      at tryCatch (/srv/github/react-native-bilerplate/node_modules/@babel/runtime/helpers/regeneratorRuntime.js:86:17)
+      at invoke (/srv/github/react-native-bilerplate/node_modules/@babel/runtime/helpers/regeneratorRuntime.js:124:20)
+      at /srv/github/react-native-bilerplate/node_modules/@babel/runtime/helpers/regeneratorRuntime.js:148:11
+      at new Promise (<anonymous>)
+      at callInvokeWithMethodAndArg (/srv/github/react-native-bilerplate/node_modules/@babel/runtime/helpers/regeneratorRuntime.js:147:16)
+      at AsyncIterator._invoke (/srv/github/react-native-bilerplate/node_modules/@babel/runtime/helpers/regeneratorRuntime.js:152:129)
+      at AsyncIterator.next (/srv/github/react-native-bilerplate/node_modules/@babel/runtime/helpers/regeneratorRuntime.js:117:21)
+      at Object.exports.async (/srv/github/react-native-bilerplate/node_modules/@babel/runtime/helpers/regeneratorRuntime.js:238:63)
+      at _callee (/srv/github/react-native-bilerplate/e2e/01-onboarding.e2e.js:3:13)
+      at Promise.then.completed (/srv/github/react-native-bilerplate/node_modules/jest-circus/build/utils.js:391:28),
+  hook: 'beforeAll'
+})
+Jul 28 00:47:26 onboarding page 1[560544] TRACE: [ARTIFACTS_LIFECYCLE] artifactsManager.onRunDescribeStart({ name: 'onboarding page 1' })
+Jul 28 00:47:26 detox[560544] INFO:  [1m[37m01-onboarding > onboarding page 1: [39m[22m[90mshows skip button[39m
+Jul 28 00:47:26 detox[560544] INFO:  [1m[37m01-onboarding > onboarding page 1: [39m[22m[90mshows skip button[39m[90m [[31mFAIL[90m][39m
+Jul 28 00:47:26 detox[560544] INFO:  [1m[37m01-onboarding > onboarding page 1: [39m[22m[90mshows next button[39m
+Jul 28 00:47:26 detox[560544] INFO:  [1m[37m01-onboarding > onboarding page 1: [39m[22m[90mshows next button[39m[90m [[31mFAIL[90m][39m
+Jul 28 00:47:26 detox[560544] INFO:  [1m[37m01-onboarding > onboarding page 1: [39m[22m[90mclicks next button[39m
+Jul 28 00:47:26 detox[560544] INFO:  [1m[37m01-onboarding > onboarding page 1: [39m[22m[90mclicks next button[39m[90m [[31mFAIL[90m][39m
+Jul 28 00:47:26 onboarding page 1[560544] TRACE: [ARTIFACTS_LIFECYCLE] artifactsManager.onRunDescribeFinish({ name: 'onboarding page 1' })
+Jul 28 00:47:26 onboarding page 2[560544] TRACE: [ARTIFACTS_LIFECYCLE] artifactsManager.onRunDescribeStart({ name: 'onboarding page 2' })
+Jul 28 00:47:26 detox[560544] INFO:  [1m[37m01-onboarding > onboarding page 2: [39m[22m[90mshows skip button[39m
+Jul 28 00:47:26 detox[560544] INFO:  [1m[37m01-onboarding > onboarding page 2: [39m[22m[90mshows skip button[39m[90m [[31mFAIL[90m][39m
+Jul 28 00:47:26 detox[560544] INFO:  [1m[37m01-onboarding > onboarding page 2: [39m[22m[90mshows next button[39m
+Jul 28 00:47:26 detox[560544] INFO:  [1m[37m01-onboarding > onboarding page 2: [39m[22m[90mshows next button[39m[90m [[31mFAIL[90m][39m
+Jul 28 00:47:26 detox[560544] INFO:  [1m[37m01-onboarding > onboarding page 2: [39m[22m[90mclicks next button[39m
+Jul 28 00:47:26 detox[560544] INFO:  [1m[37m01-onboarding > onboarding page 2: [39m[22m[90mclicks next button[39m[90m [[31mFAIL[90m][39m
+Jul 28 00:47:26 onboarding page 2[560544] TRACE: [ARTIFACTS_LIFECYCLE] artifactsManager.onRunDescribeFinish({ name: 'onboarding page 2' })
+Jul 28 00:47:26 onboarding page 3[560544] TRACE: [ARTIFACTS_LIFECYCLE] artifactsManager.onRunDescribeStart({ name: 'onboarding page 3' })
+Jul 28 00:47:26 detox[560544] INFO:  [1m[37m01-onboarding > onboarding page 3: [39m[22m[90mshows skip button[39m
+Jul 28 00:47:26 detox[560544] INFO:  [1m[37m01-onboarding > onboarding page 3: [39m[22m[90mshows skip button[39m[90m [[31mFAIL[90m][39m
+Jul 28 00:47:26 detox[560544] INFO:  [1m[37m01-onboarding > onboarding page 3: [39m[22m[90mshows done button[39m
+Jul 28 00:47:26 detox[560544] INFO:  [1m[37m01-onboarding > onboarding page 3: [39m[22m[90mshows done button[39m[90m [[31mFAIL[90m][39m
+Jul 28 00:47:26 detox[560544] INFO:  [1m[37m01-onboarding > onboarding page 3: [39m[22m[90mclicks done button[39m
+Jul 28 00:47:26 detox[560544] INFO:  [1m[37m01-onboarding > onboarding page 3: [39m[22m[90mclicks done button[39m[90m [[31mFAIL[90m][39m
+Jul 28 00:47:26 detox[560544] INFO:  [1m[37m01-onboarding > onboarding page 3: [39m[22m[90mshows home page title[39m
+Jul 28 00:47:26 detox[560544] INFO:  [1m[37m01-onboarding > onboarding page 3: [39m[22m[90mshows home page title[39m[90m [[31mFAIL[90m][39m
+Jul 28 00:47:26 onboarding page 3[560544] TRACE: [ARTIFACTS_LIFECYCLE] artifactsManager.onRunDescribeFinish({ name: 'onboarding page 3' })
+Jul 28 00:47:26 detox[560544] TRACE: [ARTIFACTS_LIFECYCLE] artifactsManager.onBeforeTerminateApp({ deviceId: 'emulator-16582', bundleId: 'com.reactnativeboilerplate' })
+Jul 28 00:47:26 detox[560544] DEBUG: [EXEC_CMD, #32] "/opt/android-sdk/platform-tools/adb" -s emulator-16582 shell "am force-stop com.reactnativeboilerplate"
+Jul 28 00:47:26 detox[560544] TRACE: [EXEC_SUCCESS, #31] 
+Jul 28 00:47:26 detox[560544] TRACE: [EXEC_SUCCESS, #32] 
+Jul 28 00:47:26 detox[560544] TRACE: [ARTIFACTS_LIFECYCLE] artifactsManager.onTerminateApp({ deviceId: 'emulator-16582', bundleId: 'com.reactnativeboilerplate' })
+Jul 28 00:47:26 01-onboarding[560544] TRACE: [ARTIFACTS_LIFECYCLE] artifactsManager.onRunDescribeFinish({ name: '01-onboarding' })
+Jul 28 00:47:26 ROOT_DESCRIBE_BLOCK[560544] TRACE: [ARTIFACTS_LIFECYCLE] artifactsManager.onRunDescribeFinish({ name: 'ROOT_DESCRIBE_BLOCK' })
+Jul 28 00:47:26 detox[560544] TRACE: [ARTIFACTS_LIFECYCLE] artifactsManager.onBeforeCleanup()
+Jul 28 00:47:26 detox[560544] TRACE: [ARTIFACT_SAVE] saving ADBLogcatRecording to: artifacts/android.2022-07-27 14-47-22Z/emulator-16582 2022-07-27 14-47-26Z.startup.log
+Jul 28 00:47:26 detox[560544] TRACE: [ARTIFACT_STOP] stopping ADBLogcatRecording
+Jul 28 00:47:26 detox[560544] DEBUG: [EXEC_CMD, #33] "/opt/android-sdk/platform-tools/adb" -s emulator-16582 shell du /sdcard/0472356_0.log
+Jul 28 00:47:26 detox[560544] TRACE: [EXEC_SUCCESS, #33] 76	/sdcard/0472356_0.log
+
+Jul 28 00:47:26 detox[560544] DEBUG: [EXEC_CMD, #34] "/opt/android-sdk/platform-tools/adb" -s emulator-16582 shell "date +\"%m-%d %T.000\""
+Jul 28 00:47:26 detox[560544] TRACE: [EXEC_SUCCESS, #34] 07-27 14:47:26.000
+
+Jul 28 00:47:26 detox[562003] TRACE: [SPAWN_KILL] sending SIGINT to: /opt/android-sdk/platform-tools/adb -s emulator-16582 shell logcat -T "07-27 14:47:25.000" --pid=12433 -f /sdcard/0472356_0.log
+Jul 28 00:47:26 detox[560544] DEBUG: [SPAWN_END, #30, cpid=562003] /opt/android-sdk/platform-tools/adb -s emulator-16582 shell "logcat -T \"07-27 14:47:25.000\" --pid=12433 -f /sdcard/0472356_0.log" terminated with SIGINT
+Jul 28 00:47:26 detox[560544] DEBUG: [EXEC_CMD, #35] "/opt/android-sdk/platform-tools/adb" -s emulator-16582 pull "/sdcard/0472356_0.log" "artifacts/android.2022-07-27 14-47-22Z/emulator-16582 2022-07-27 14-47-26Z.startup.log"
+Jul 28 00:47:26 detox[560544] TRACE: [EXEC_SUCCESS, #35] /sdcard/0472356_0.log: 1 file pulled, 0 skipped. 66.7 MB/s (73860 bytes in 0.001s)
+
+Jul 28 00:47:26 detox[560544] DEBUG: [EXEC_CMD, #36] "/opt/android-sdk/platform-tools/adb" -s emulator-16582 shell "rm  \"/sdcard/0472356_0.log\""
+Jul 28 00:47:26 detox[560544] TRACE: [EXEC_SUCCESS, #36] 
+Jul 28 00:47:26 detox[560544] TRACE: [ARTIFACT_START] starting FileArtifact
+Jul 28 00:47:26 detox[560544] TRACE: [ARTIFACT_STOP] stopping FileArtifact
+Jul 28 00:47:26 detox[560544] TRACE: [ARTIFACT_SAVE] saving FileArtifact to: artifacts/android.2022-07-27 14-47-22Z/detox_pid_560544.json.log { append: true }
+Jul 28 00:47:26 detox[560544] TRACE: [ARTIFACT_START] starting FileArtifact
+Jul 28 00:47:26 detox[560544] TRACE: [ARTIFACT_STOP] stopping FileArtifact
+Jul 28 00:47:26 detox[560544] TRACE: [ARTIFACT_SAVE] saving FileArtifact to: artifacts/android.2022-07-27 14-47-22Z/detox_pid_560544.log { append: true }
+Jul 28 00:47:26 detox[560544] DEBUG: [MOVE_FILE] moving "/tmp/404ae134-4940-4518-bcd0-88ddcb452bf0.detox.log" to artifacts/android.2022-07-27 14-47-22Z/detox_pid_560544.json.log
+Jul 28 00:47:26 detox[560544] DEBUG: [MOVE_FILE] moving "/tmp/fd092275-f4c6-4206-9ba1-e7a52762e0a3.detox.log" to artifacts/android.2022-07-27 14-47-22Z/detox_pid_560544.log

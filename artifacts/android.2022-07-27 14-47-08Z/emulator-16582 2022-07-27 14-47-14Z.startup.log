@@ -1,0 +1,553 @@
+--------- beginning of main
+07-27 14:47:13.818 12227 12227 W tiveboilerplat: Unexpected CPU variant for X86 using defaults: x86
+--------- beginning of system
+07-27 14:47:13.828 12227 12227 W ActivityThread: Package uses different ABI(s) than its instrumentation: package[com.reactnativeboilerplate]: x86, null instrumentation[com.reactnativeboilerplate.test]: null, null
+07-27 14:47:13.828 12227 12227 I tiveboilerplat: The ClassLoaderContext is a special shared library.
+07-27 14:47:13.829 12227 12227 I tiveboilerplat: The ClassLoaderContext is a special shared library.
+07-27 14:47:13.829 12227 12227 W tiveboilerplat: ClassLoaderContext classpath element mismatch for position 0. expected=/system/framework/android.test.mock.jar, found=/system/framework/android.test.runner.jar (PCL[/system/framework/android.test.mock.jar*2077058553:/system/framework/android.test.runner.jar*3846605392] | PCL[/system/framework/android.test.runner.jar*3846605392:/system/framework/android.test.mock.jar*2077058553])
+07-27 14:47:13.829 12227 12227 W tiveboilerplat: Found duplicate classes, falling back to extracting from APK : /data/app/com.reactnativeboilerplate.test-Syq7tvpD7p7PJBPWPlwQ6w==/base.apk
+07-27 14:47:13.829 12227 12227 W tiveboilerplat: NOTE: This wastes RAM and hurts startup performance.
+07-27 14:47:13.829 12227 12227 W tiveboilerplat: Found duplicated class when checking oat files: 'Ljunit/runner/BaseTestRunner;' in /data/app/com.reactnativeboilerplate.test-Syq7tvpD7p7PJBPWPlwQ6w==/base.apk and /system/framework/android.test.runner.jar
+07-27 14:47:13.829 12227 12227 W tiveboilerplat: 
+07-27 14:47:13.872 12227 12227 W tiveboilerplat: ClassLoaderContext classpath size mismatch for position 0. expected=0, found=3 (PCL[] | PCL[/system/framework/android.test.runner.jar*3846605392:/system/framework/android.test.mock.jar*2077058553:/data/app/com.reactnativeboilerplate.test-Syq7tvpD7p7PJBPWPlwQ6w==/base.apk*1850190711])
+07-27 14:47:13.876 12227 12227 I tiveboilerplat: The ClassLoaderContext is a special shared library.
+07-27 14:47:13.877 12227 12227 I tiveboilerplat: The ClassLoaderContext is a special shared library.
+07-27 14:47:13.877 12227 12227 W tiveboilerplat: ClassLoaderContext size mismatch. expected=1, actual=2 (PCL[/system/framework/android.test.mock.jar*2077058553:/system/framework/android.test.runner.jar*3846605392] | PCL[/system/framework/android.test.runner.jar*3846605392:/system/framework/android.test.mock.jar*2077058553];PCL[/system/framework/android.test.runner.jar*3846605392:/system/framework/android.test.mock.jar*2077058553:/data/app/com.reactnativeboilerplate.test-Syq7tvpD7p7PJBPWPlwQ6w==/base.apk*1850190711:/data/app/com.reactnativeboilerplate--zp5BliAZkqOgNSuV6Z5Gw==/base.apk*4000528435])
+07-27 14:47:13.877 12227 12227 W tiveboilerplat: Found duplicate classes, falling back to extracting from APK : /data/app/com.reactnativeboilerplate.test-Syq7tvpD7p7PJBPWPlwQ6w==/base.apk
+07-27 14:47:13.877 12227 12227 W tiveboilerplat: NOTE: This wastes RAM and hurts startup performance.
+07-27 14:47:13.877 12227 12227 W tiveboilerplat: Found duplicated class when checking oat files: 'Landroid_libs/ub_uiautomator/R;' in /data/app/com.reactnativeboilerplate.test-Syq7tvpD7p7PJBPWPlwQ6w==/base.apk and /data/app/com.reactnativeboilerplate.test-Syq7tvpD7p7PJBPWPlwQ6w==/base.apk
+07-27 14:47:13.877 12227 12227 W tiveboilerplat: 
+07-27 14:47:13.920 12227 12227 W tiveboilerplat: ClassLoaderContext size mismatch. expected=1, actual=2 (PCL[] | PCL[/system/framework/android.test.runner.jar*3846605392:/system/framework/android.test.mock.jar*2077058553:/data/app/com.reactnativeboilerplate.test-Syq7tvpD7p7PJBPWPlwQ6w==/base.apk*1850190711];PCL[/system/framework/android.test.runner.jar*3846605392:/system/framework/android.test.mock.jar*2077058553:/data/app/com.reactnativeboilerplate.test-Syq7tvpD7p7PJBPWPlwQ6w==/base.apk*1850190711:/data/app/com.reactnativeboilerplate--zp5BliAZkqOgNSuV6Z5Gw==/base.apk*4000528435])
+07-27 14:47:13.920 12227 12227 W tiveboilerplat: Found duplicate classes, falling back to extracting from APK : /data/app/com.reactnativeboilerplate--zp5BliAZkqOgNSuV6Z5Gw==/base.apk
+07-27 14:47:13.920 12227 12227 W tiveboilerplat: NOTE: This wastes RAM and hurts startup performance.
+07-27 14:47:13.920 12227 12227 W tiveboilerplat: Found duplicated class when checking oat files: 'La/a$a$a;' in /data/app/com.reactnativeboilerplate--zp5BliAZkqOgNSuV6Z5Gw==/base.apk and /data/app/com.reactnativeboilerplate--zp5BliAZkqOgNSuV6Z5Gw==/base.apk
+07-27 14:47:13.920 12227 12227 W tiveboilerplat: 
+07-27 14:47:14.044 12227 12227 I MonitoringInstr: Instrumentation started!
+07-27 14:47:14.048 12227 12227 V TestEventClient: No service name argument was given (testDiscoveryService, testRunEventService or orchestratorService)
+07-27 14:47:14.049 12227 12227 V fb-UnpackingSoSource: locked dso store /data/user/0/com.reactnativeboilerplate/lib-main
+07-27 14:47:14.050 12227 12227 V fb-UnpackingSoSource: deps mismatch on deps store: regenerating
+07-27 14:47:14.050 12227 12227 V fb-UnpackingSoSource: so store dirty: regenerating
+07-27 14:47:14.073 12227 12227 D ApkSoSource: not allowing consideration of lib/x86/libbutter.so: deferring to libdir
+07-27 14:47:14.073 12227 12227 D ApkSoSource: not allowing consideration of lib/x86/libc++_shared.so: deferring to libdir
+07-27 14:47:14.073 12227 12227 D ApkSoSource: not allowing consideration of lib/x86/libconceal.so: deferring to libdir
+07-27 14:47:14.073 12227 12227 D ApkSoSource: not allowing consideration of lib/x86/libfabricjni.so: deferring to libdir
+07-27 14:47:14.073 12227 12227 D ApkSoSource: not allowing consideration of lib/x86/libfb.so: deferring to libdir
+07-27 14:47:14.073 12227 12227 D ApkSoSource: not allowing consideration of lib/x86/libfbjni.so: deferring to libdir
+07-27 14:47:14.073 12227 12227 D ApkSoSource: not allowing consideration of lib/x86/libfolly_futures.so: deferring to libdir
+07-27 14:47:14.073 12227 12227 D ApkSoSource: not allowing consideration of lib/x86/libfolly_json.so: deferring to libdir
+07-27 14:47:14.074 12227 12227 D ApkSoSource: not allowing consideration of lib/x86/libglog.so: deferring to libdir
+07-27 14:47:14.074 12227 12227 D ApkSoSource: not allowing consideration of lib/x86/libglog_init.so: deferring to libdir
+07-27 14:47:14.074 12227 12227 D ApkSoSource: not allowing consideration of lib/x86/libhermes-executor-release.so: deferring to libdir
+07-27 14:47:14.074 12227 12227 D ApkSoSource: not allowing consideration of lib/x86/libhermes.so: deferring to libdir
+07-27 14:47:14.074 12227 12227 D ApkSoSource: not allowing consideration of lib/x86/libimagepipeline.so: deferring to libdir
+07-27 14:47:14.074 12227 12227 D ApkSoSource: not allowing consideration of lib/x86/libjsi.so: deferring to libdir
+07-27 14:47:14.074 12227 12227 D ApkSoSource: not allowing consideration of lib/x86/libjsijniprofiler.so: deferring to libdir
+07-27 14:47:14.074 12227 12227 D ApkSoSource: not allowing consideration of lib/x86/libjsinspector.so: deferring to libdir
+07-27 14:47:14.074 12227 12227 D ApkSoSource: not allowing consideration of lib/x86/liblogger.so: deferring to libdir
+07-27 14:47:14.074 12227 12227 D ApkSoSource: not allowing consideration of lib/x86/libmapbufferjni.so: deferring to libdir
+07-27 14:47:14.075 12227 12227 D ApkSoSource: not allowing consideration of lib/x86/libnative-filters.so: deferring to libdir
+07-27 14:47:14.075 12227 12227 D ApkSoSource: not allowing consideration of lib/x86/libnative-imagetranscoder.so: deferring to libdir
+07-27 14:47:14.075 12227 12227 D ApkSoSource: not allowing consideration of lib/x86/libreact_codegen_rncore.so: deferring to libdir
+07-27 14:47:14.075 12227 12227 D ApkSoSource: not allowing consideration of lib/x86/libreact_config.so: deferring to libdir
+07-27 14:47:14.075 12227 12227 D ApkSoSource: not allowing consideration of lib/x86/libreact_debug.so: deferring to libdir
+07-27 14:47:14.075 12227 12227 D ApkSoSource: not allowing consideration of lib/x86/libreact_nativemodule_core.so: deferring to libdir
+07-27 14:47:14.075 12227 12227 D ApkSoSource: not allowing consideration of lib/x86/libreact_render_animations.so: deferring to libdir
+07-27 14:47:14.075 12227 12227 D ApkSoSource: not allowing consideration of lib/x86/libreact_render_attributedstring.so: deferring to libdir
+07-27 14:47:14.075 12227 12227 D ApkSoSource: not allowing consideration of lib/x86/libreact_render_componentregistry.so: deferring to libdir
+07-27 14:47:14.075 12227 12227 D ApkSoSource: not allowing consideration of lib/x86/libreact_render_core.so: deferring to libdir
+07-27 14:47:14.075 12227 12227 D ApkSoSource: not allowing consideration of lib/x86/libreact_render_debug.so: deferring to libdir
+07-27 14:47:14.075 12227 12227 D ApkSoSource: not allowing consideration of lib/x86/libreact_render_graphics.so: deferring to libdir
+07-27 14:47:14.076 12227 12227 D ApkSoSource: not allowing consideration of lib/x86/libreact_render_imagemanager.so: deferring to libdir
+07-27 14:47:14.076 12227 12227 D ApkSoSource: not allowing consideration of lib/x86/libreact_render_leakchecker.so: deferring to libdir
+07-27 14:47:14.076 12227 12227 D ApkSoSource: not allowing consideration of lib/x86/libreact_render_mapbuffer.so: deferring to libdir
+07-27 14:47:14.076 12227 12227 D ApkSoSource: not allowing consideration of lib/x86/libreact_render_mounting.so: deferring to libdir
+07-27 14:47:14.076 12227 12227 D ApkSoSource: not allowing consideration of lib/x86/libreact_render_runtimescheduler.so: deferring to libdir
+07-27 14:47:14.076 12227 12227 D ApkSoSource: not allowing consideration of lib/x86/libreact_render_scheduler.so: deferring to libdir
+07-27 14:47:14.076 12227 12227 D ApkSoSource: not allowing consideration of lib/x86/libreact_render_telemetry.so: deferring to libdir
+07-27 14:47:14.076 12227 12227 D ApkSoSource: not allowing consideration of lib/x86/libreact_render_templateprocessor.so: deferring to libdir
+07-27 14:47:14.076 12227 12227 D ApkSoSource: not allowing consideration of lib/x86/libreact_render_textlayoutmanager.so: deferring to libdir
+07-27 14:47:14.076 12227 12227 D ApkSoSource: not allowing consideration of lib/x86/libreact_render_uimanager.so: deferring to libdir
+07-27 14:47:14.076 12227 12227 D ApkSoSource: not allowing consideration of lib/x86/libreact_utils.so: deferring to libdir
+07-27 14:47:14.077 12227 12227 D ApkSoSource: not allowing consideration of lib/x86/libreactnativeblob.so: deferring to libdir
+07-27 14:47:14.077 12227 12227 D ApkSoSource: not allowing consideration of lib/x86/libreactnativejni.so: deferring to libdir
+07-27 14:47:14.077 12227 12227 D ApkSoSource: not allowing consideration of lib/x86/libreactnativeutilsjni.so: deferring to libdir
+07-27 14:47:14.077 12227 12227 D ApkSoSource: not allowing consideration of lib/x86/libreactperfloggerjni.so: deferring to libdir
+07-27 14:47:14.077 12227 12227 D ApkSoSource: not allowing consideration of lib/x86/libreanimated.so: deferring to libdir
+07-27 14:47:14.077 12227 12227 D ApkSoSource: not allowing consideration of lib/x86/librrc_image.so: deferring to libdir
+07-27 14:47:14.077 12227 12227 D ApkSoSource: not allowing consideration of lib/x86/librrc_root.so: deferring to libdir
+07-27 14:47:14.077 12227 12227 D ApkSoSource: not allowing consideration of lib/x86/librrc_text.so: deferring to libdir
+07-27 14:47:14.077 12227 12227 D ApkSoSource: not allowing consideration of lib/x86/librrc_unimplementedview.so: deferring to libdir
+07-27 14:47:14.077 12227 12227 D ApkSoSource: not allowing consideration of lib/x86/librrc_view.so: deferring to libdir
+07-27 14:47:14.077 12227 12227 D ApkSoSource: not allowing consideration of lib/x86/libruntimeexecutor.so: deferring to libdir
+07-27 14:47:14.077 12227 12227 D ApkSoSource: not allowing consideration of lib/x86/libturbomodulejsijni.so: deferring to libdir
+07-27 14:47:14.078 12227 12227 D ApkSoSource: not allowing consideration of lib/x86/libyoga.so: deferring to libdir
+07-27 14:47:14.078 12227 12227 V fb-UnpackingSoSource: regenerating DSO store com.facebook.soloader.a
+07-27 14:47:14.078 12227 12227 V fb-UnpackingSoSource: Finished regenerating DSO store com.facebook.soloader.a
+07-27 14:47:14.079 12227 12227 V fb-UnpackingSoSource: starting syncer worker
+07-27 14:47:14.088 12227 12227 V fb-UnpackingSoSource: releasing dso store lock for /data/user/0/com.reactnativeboilerplate/lib-main (from syncer thread)
+07-27 14:47:14.088 12227 12227 V fb-UnpackingSoSource: not releasing dso store lock for /data/user/0/com.reactnativeboilerplate/lib-main (syncer thread started)
+07-27 14:47:14.093 12227 12227 D SoLoader: libjscexecutor.so not found on /data/data/com.reactnativeboilerplate/lib-main
+07-27 14:47:14.093 12227 12227 D SoLoader: libjscexecutor.so not found on /data/app/com.reactnativeboilerplate--zp5BliAZkqOgNSuV6Z5Gw==/lib/x86
+07-27 14:47:14.093 12227 12227 D SoLoader: libjscexecutor.so not found on /vendor/lib
+07-27 14:47:14.093 12227 12227 D SoLoader: libjscexecutor.so not found on /system/lib
+07-27 14:47:14.095 12227 12227 E SoLoader: couldn't find DSO to load: libjscexecutor.so
+07-27 14:47:14.095 12227 12227 E SoLoader: 	SoSource 0: com.facebook.soloader.a[root = /data/data/com.reactnativeboilerplate/lib-main flags = 1]
+07-27 14:47:14.095 12227 12227 E SoLoader: 	SoSource 1: com.facebook.soloader.d[root = /data/app/com.reactnativeboilerplate--zp5BliAZkqOgNSuV6Z5Gw==/lib/x86 flags = 0]
+07-27 14:47:14.095 12227 12227 E SoLoader: 	SoSource 2: com.facebook.soloader.d[root = /vendor/lib flags = 2]
+07-27 14:47:14.095 12227 12227 E SoLoader: 	SoSource 3: com.facebook.soloader.d[root = /system/lib flags = 2]
+07-27 14:47:14.095 12227 12227 E SoLoader: 	Native lib dir: /data/app/com.reactnativeboilerplate--zp5BliAZkqOgNSuV6Z5Gw==/lib/x86
+07-27 14:47:14.095 12227 12227 E SoLoader:  result: 0
+07-27 14:47:14.095 12227 12227 D SoLoader: libhermes.so not found on /data/data/com.reactnativeboilerplate/lib-main
+07-27 14:47:14.095 12227 12227 D SoLoader: libhermes.so found on /data/app/com.reactnativeboilerplate--zp5BliAZkqOgNSuV6Z5Gw==/lib/x86
+07-27 14:47:14.095 12227 12227 D SoLoader: Not resolving dependencies for libhermes.so
+07-27 14:47:14.103 12227 12227 D SoLoader: libhermes-executor-debug.so not found on /data/data/com.reactnativeboilerplate/lib-main
+07-27 14:47:14.103 12227 12227 D SoLoader: libhermes-executor-debug.so not found on /data/app/com.reactnativeboilerplate--zp5BliAZkqOgNSuV6Z5Gw==/lib/x86
+07-27 14:47:14.104 12227 12227 D SoLoader: libhermes-executor-debug.so not found on /vendor/lib
+07-27 14:47:14.104 12227 12227 D SoLoader: libhermes-executor-debug.so not found on /system/lib
+07-27 14:47:14.104 12227 12227 E SoLoader: couldn't find DSO to load: libhermes-executor-debug.so
+07-27 14:47:14.104 12227 12227 E SoLoader: 	SoSource 0: com.facebook.soloader.a[root = /data/data/com.reactnativeboilerplate/lib-main flags = 1]
+07-27 14:47:14.104 12227 12227 E SoLoader: 	SoSource 1: com.facebook.soloader.d[root = /data/app/com.reactnativeboilerplate--zp5BliAZkqOgNSuV6Z5Gw==/lib/x86 flags = 0]
+07-27 14:47:14.104 12227 12227 E SoLoader: 	SoSource 2: com.facebook.soloader.d[root = /vendor/lib flags = 2]
+07-27 14:47:14.104 12227 12227 E SoLoader: 	SoSource 3: com.facebook.soloader.d[root = /system/lib flags = 2]
+07-27 14:47:14.104 12227 12227 E SoLoader: 	Native lib dir: /data/app/com.reactnativeboilerplate--zp5BliAZkqOgNSuV6Z5Gw==/lib/x86
+07-27 14:47:14.104 12227 12227 E SoLoader:  result: 0
+07-27 14:47:14.104 12227 12227 D SoLoader: libhermes-executor-release.so not found on /data/data/com.reactnativeboilerplate/lib-main
+07-27 14:47:14.105 12227 12227 D SoLoader: libhermes-executor-release.so found on /data/app/com.reactnativeboilerplate--zp5BliAZkqOgNSuV6Z5Gw==/lib/x86
+07-27 14:47:14.105 12227 12227 D SoLoader: Not resolving dependencies for libhermes-executor-release.so
+07-27 14:47:14.124 12227 12246 I UsageTrackerFacilitator: Usage tracking enabled
+07-27 14:47:14.126 12227 12246 I TestRequestBuilder: Scanning classpath to find tests in paths [/data/app/com.reactnativeboilerplate.test-Syq7tvpD7p7PJBPWPlwQ6w==/base.apk]
+07-27 14:47:14.126 12227 12246 W tiveboilerplat: Opening an oat file without a class loader. Are you using the deprecated DexFile APIs?
+07-27 14:47:14.219 12227 12246 W tiveboilerplat: Unable to resolve Lcom/wix/detox/DetoxANRHandler; annotation class 2323
+07-27 14:47:14.219 12227 12246 I chatty  : uid=10114(com.reactnativeboilerplate) roidJUnitRunner identical 1 line
+07-27 14:47:14.219 12227 12246 W tiveboilerplat: Unable to resolve Lcom/wix/detox/DetoxANRHandler; annotation class 2323
+07-27 14:47:14.219 12227 12246 W tiveboilerplat: Unable to resolve Lcom/wix/detox/DetoxCrashHandler; annotation class 2323
+07-27 14:47:14.219 12227 12246 I chatty  : uid=10114(com.reactnativeboilerplate) roidJUnitRunner identical 1 line
+07-27 14:47:14.219 12227 12246 W tiveboilerplat: Unable to resolve Lcom/wix/detox/DetoxCrashHandler; annotation class 2323
+07-27 14:47:14.220 12227 12246 W tiveboilerplat: Unable to resolve Lcom/wix/detox/DetoxMain; annotation class 2323
+07-27 14:47:14.220 12227 12246 I chatty  : uid=10114(com.reactnativeboilerplate) roidJUnitRunner identical 1 line
+07-27 14:47:14.220 12227 12246 W tiveboilerplat: Unable to resolve Lcom/wix/detox/DetoxMain; annotation class 2323
+07-27 14:47:14.221 12227 12246 W tiveboilerplat: Unable to resolve Lcom/wix/detox/DetoxMainKt; annotation class 2323
+07-27 14:47:14.221 12227 12246 I chatty  : uid=10114(com.reactnativeboilerplate) roidJUnitRunner identical 1 line
+07-27 14:47:14.221 12227 12246 W tiveboilerplat: Unable to resolve Lcom/wix/detox/DetoxMainKt; annotation class 2323
+07-27 14:47:14.222 12227 12246 W tiveboilerplat: Unable to resolve Lcom/wix/detox/LaunchIntentsFactory; annotation class 2323
+07-27 14:47:14.222 12227 12246 I chatty  : uid=10114(com.reactnativeboilerplate) roidJUnitRunner identical 1 line
+07-27 14:47:14.222 12227 12246 W tiveboilerplat: Unable to resolve Lcom/wix/detox/LaunchIntentsFactory; annotation class 2323
+07-27 14:47:14.223 12227 12246 W tiveboilerplat: Unable to resolve Lcom/wix/detox/NotificationDataParser; annotation class 2323
+07-27 14:47:14.223 12227 12246 I chatty  : uid=10114(com.reactnativeboilerplate) roidJUnitRunner identical 1 line
+07-27 14:47:14.223 12227 12246 W tiveboilerplat: Unable to resolve Lcom/wix/detox/NotificationDataParser; annotation class 2323
+07-27 14:47:14.223 12227 12246 W tiveboilerplat: Unable to resolve Lcom/wix/detox/TestEngineFacade; annotation class 2323
+07-27 14:47:14.223 12227 12246 I chatty  : uid=10114(com.reactnativeboilerplate) roidJUnitRunner identical 1 line
+07-27 14:47:14.223 12227 12246 W tiveboilerplat: Unable to resolve Lcom/wix/detox/TestEngineFacade; annotation class 2323
+07-27 14:47:14.223 12227 12246 W tiveboilerplat: Unable to resolve Lcom/wix/detox/action/common/MotionDefs; annotation class 2323
+07-27 14:47:14.223 12227 12246 I chatty  : uid=10114(com.reactnativeboilerplate) roidJUnitRunner identical 1 line
+07-27 14:47:14.223 12227 12246 W tiveboilerplat: Unable to resolve Lcom/wix/detox/action/common/MotionDefs; annotation class 2323
+07-27 14:47:14.224 12227 12246 W tiveboilerplat: Unable to resolve Lcom/wix/detox/adapters/server/ActionsExecutor; annotation class 2323
+07-27 14:47:14.224 12227 12246 I chatty  : uid=10114(com.reactnativeboilerplate) roidJUnitRunner identical 1 line
+07-27 14:47:14.224 12227 12246 W tiveboilerplat: Unable to resolve Lcom/wix/detox/adapters/server/ActionsExecutor; annotation class 2323
+07-27 14:47:14.224 12227 12246 W tiveboilerplat: Unable to resolve Lcom/wix/detox/adapters/server/CleanupActionHandler; annotation class 2323
+07-27 14:47:14.224 12227 12246 I chatty  : uid=10114(com.reactnativeboilerplate) roidJUnitRunner identical 1 line
+07-27 14:47:14.224 12227 12246 W tiveboilerplat: Unable to resolve Lcom/wix/detox/adapters/server/CleanupActionHandler; annotation class 2323
+07-27 14:47:14.224 12227 12246 W tiveboilerplat: Unable to resolve Lcom/wix/detox/adapters/server/DetoxActionHandlersKt; annotation class 2323
+07-27 14:47:14.224 12227 12246 I chatty  : uid=10114(com.reactnativeboilerplate) roidJUnitRunner identical 1 line
+07-27 14:47:14.224 12227 12246 W tiveboilerplat: Unable to resolve Lcom/wix/detox/adapters/server/DetoxActionHandlersKt; annotation class 2323
+07-27 14:47:14.225 12227 12246 W tiveboilerplat: Unable to resolve Lcom/wix/detox/adapters/server/DetoxActionsDispatcher; annotation class 2323
+07-27 14:47:14.225 12227 12246 I chatty  : uid=10114(com.reactnativeboilerplate) roidJUnitRunner identical 1 line
+07-27 14:47:14.225 12227 12246 W tiveboilerplat: Unable to resolve Lcom/wix/detox/adapters/server/DetoxActionsDispatcher; annotation class 2323
+07-27 14:47:14.225 12227 12246 W tiveboilerplat: Unable to resolve Lcom/wix/detox/adapters/server/DetoxActionsDispatcherKt; annotation class 2323
+07-27 14:47:14.225 12227 12246 I chatty  : uid=10114(com.reactnativeboilerplate) roidJUnitRunner identical 1 line
+07-27 14:47:14.225 12227 12246 W tiveboilerplat: Unable to resolve Lcom/wix/detox/adapters/server/DetoxActionsDispatcherKt; annotation class 2323
+07-27 14:47:14.225 12227 12246 W tiveboilerplat: Unable to resolve Lcom/wix/detox/adapters/server/DetoxServerAdapter; annotation class 2323
+07-27 14:47:14.225 12227 12246 I chatty  : uid=10114(com.reactnativeboilerplate) roidJUnitRunner identical 1 line
+07-27 14:47:14.225 12227 12246 W tiveboilerplat: Unable to resolve Lcom/wix/detox/adapters/server/DetoxServerAdapter; annotation class 2323
+07-27 14:47:14.225 12227 12246 W tiveboilerplat: Unable to resolve Lcom/wix/detox/adapters/server/DetoxServerInfo; annotation class 2323
+07-27 14:47:14.225 12227 12246 I chatty  : uid=10114(com.reactnativeboilerplate) roidJUnitRunner identical 1 line
+07-27 14:47:14.226 12227 12246 W tiveboilerplat: Unable to resolve Lcom/wix/detox/adapters/server/DetoxServerInfo; annotation class 2323
+07-27 14:47:14.226 12227 12246 W tiveboilerplat: Unable to resolve Lcom/wix/detox/adapters/server/DetoxServerInfoKt; annotation class 2323
+07-27 14:47:14.226 12227 12246 I chatty  : uid=10114(com.reactnativeboilerplate) roidJUnitRunner identical 1 line
+07-27 14:47:14.226 12227 12246 W tiveboilerplat: Unable to resolve Lcom/wix/detox/adapters/server/DetoxServerInfoKt; annotation class 2323
+07-27 14:47:14.226 12227 12246 W tiveboilerplat: Unable to resolve Lcom/wix/detox/adapters/server/InstrumentsEventsActionsHandler; annotation class 2323
+07-27 14:47:14.226 12227 12246 I chatty  : uid=10114(com.reactnativeboilerplate) roidJUnitRunner identical 1 line
+07-27 14:47:14.226 12227 12246 W tiveboilerplat: Unable to resolve Lcom/wix/detox/adapters/server/InstrumentsEventsActionsHandler; annotation class 2323
+07-27 14:47:14.226 12227 12246 W tiveboilerplat: Unable to resolve Lcom/wix/detox/adapters/server/InstrumentsRecordingStateActionHandler; annotation class 2323
+07-27 14:47:14.226 12227 12246 I chatty  : uid=10114(com.reactnativeboilerplate) roidJUnitRunner identical 1 line
+07-27 14:47:14.226 12227 12246 W tiveboilerplat: Unable to resolve Lcom/wix/detox/adapters/server/InstrumentsRecordingStateActionHandler; annotation class 2323
+07-27 14:47:14.226 12227 12246 W tiveboilerplat: Unable to resolve Lcom/wix/detox/adapters/server/InvokeActionHandler; annotation class 2323
+07-27 14:47:14.227 12227 12246 I chatty  : uid=10114(com.reactnativeboilerplate) roidJUnitRunner identical 1 line
+07-27 14:47:14.227 12227 12246 W tiveboilerplat: Unable to resolve Lcom/wix/detox/adapters/server/InvokeActionHandler; annotation class 2323
+07-27 14:47:14.227 12227 12246 W tiveboilerplat: Unable to resolve Lcom/wix/detox/adapters/server/QueryStatusActionHandler; annotation class 2323
+07-27 14:47:14.227 12227 12246 I chatty  : uid=10114(com.reactnativeboilerplate) roidJUnitRunner identical 1 line
+07-27 14:47:14.227 12227 12246 W tiveboilerplat: Unable to resolve Lcom/wix/detox/adapters/server/QueryStatusActionHandler; annotation class 2323
+07-27 14:47:14.227 12227 12246 W tiveboilerplat: Unable to resolve Lcom/wix/detox/adapters/server/ReactNativeReloadActionHandler; annotation class 2323
+07-27 14:47:14.227 12227 12246 I chatty  : uid=10114(com.reactnativeboilerplate) roidJUnitRunner identical 1 line
+07-27 14:47:14.227 12227 12246 W tiveboilerplat: Unable to resolve Lcom/wix/detox/adapters/server/ReactNativeReloadActionHandler; annotation class 2323
+07-27 14:47:14.227 12227 12246 W tiveboilerplat: Unable to resolve Lcom/wix/detox/adapters/server/ReadyActionHandler; annotation class 2323
+07-27 14:47:14.227 12227 12246 I chatty  : uid=10114(com.reactnativeboilerplate) roidJUnitRunner identical 1 line
+07-27 14:47:14.227 12227 12246 W tiveboilerplat: Unable to resolve Lcom/wix/detox/adapters/server/ReadyActionHandler; annotation class 2323
+07-27 14:47:14.227 12227 12246 W tiveboilerplat: Unable to resolve Lcom/wix/detox/adapters/server/ScarceActionHandler; annotation class 2323
+07-27 14:47:14.228 12227 12246 I chatty  : uid=10114(com.reactnativeboilerplate) roidJUnitRunner identical 1 line
+07-27 14:47:14.228 12227 12246 W tiveboilerplat: Unable to resolve Lcom/wix/detox/adapters/server/ScarceActionHandler; annotation class 2323
+07-27 14:47:14.228 12227 12246 W tiveboilerplat: Unable to resolve Lcom/wix/detox/common/DetoxLog; annotation class 2323
+07-27 14:47:14.228 12227 12246 I chatty  : uid=10114(com.reactnativeboilerplate) roidJUnitRunner identical 1 line
+07-27 14:47:14.228 12227 12246 W tiveboilerplat: Unable to resolve Lcom/wix/detox/common/DetoxLog; annotation class 2323
+07-27 14:47:14.228 12227 12246 W tiveboilerplat: Unable to resolve Lcom/wix/detox/common/ErrorUtilsKt; annotation class 2323
+07-27 14:47:14.228 12227 12246 I chatty  : uid=10114(com.reactnativeboilerplate) roidJUnitRunner identical 1 line
+07-27 14:47:14.228 12227 12246 W tiveboilerplat: Unable to resolve Lcom/wix/detox/common/ErrorUtilsKt; annotation class 2323
+07-27 14:47:14.228 12227 12246 W tiveboilerplat: Unable to resolve Lcom/wix/detox/common/JsonConverter; annotation class 2323
+07-27 14:47:14.228 12227 12246 I chatty  : uid=10114(com.reactnativeboilerplate) roidJUnitRunner identical 1 line
+07-27 14:47:14.228 12227 12246 W tiveboilerplat: Unable to resolve Lcom/wix/detox/common/JsonConverter; annotation class 2323
+07-27 14:47:14.229 12227 12246 W tiveboilerplat: Unable to resolve Lcom/wix/detox/common/TextFileReader; annotation class 2323
+07-27 14:47:14.229 12227 12246 I chatty  : uid=10114(com.reactnativeboilerplate) roidJUnitRunner identical 1 line
+07-27 14:47:14.229 12227 12246 W tiveboilerplat: Unable to resolve Lcom/wix/detox/common/TextFileReader; annotation class 2323
+07-27 14:47:14.229 12227 12246 W tiveboilerplat: Unable to resolve Lcom/wix/detox/common/UIThread; annotation class 2323
+07-27 14:47:14.229 12227 12246 W tiveboilerplat: Unable to resolve Lcom/wix/detox/common/UIThread; annotation class 2323
+07-27 14:47:14.229 12227 12246 W tiveboilerplat: Unable to resolve Lcom/wix/detox/common/UIThread; annotation class 2323
+07-27 14:47:14.229 12227 12246 W tiveboilerplat: Unable to resolve Lcom/wix/detox/common/collect/PairsIterator; annotation class 2323
+07-27 14:47:14.229 12227 12246 I chatty  : uid=10114(com.reactnativeboilerplate) roidJUnitRunner identical 1 line
+07-27 14:47:14.229 12227 12246 W tiveboilerplat: Unable to resolve Lcom/wix/detox/common/collect/PairsIterator; annotation class 2323
+07-27 14:47:14.229 12227 12246 W tiveboilerplat: Unable to resolve Lcom/wix/detox/common/proxy/CallInfo; annotation class 2323
+07-27 14:47:14.229 12227 12246 I chatty  : uid=10114(com.reactnativeboilerplate) roidJUnitRunner identical 1 line
+07-27 14:47:14.229 12227 12246 W tiveboilerplat: Unable to resolve Lcom/wix/detox/common/proxy/CallInfo; annotation class 2323
+07-27 14:47:14.230 12227 12246 W tiveboilerplat: Unable to resolve Lcom/wix/detox/common/proxy/MethodsSpy; annotation class 2323
+07-27 14:47:14.230 12227 12246 I chatty  : uid=10114(com.reactnativeboilerplate) roidJUnitRunner identical 1 line
+07-27 14:47:14.230 12227 12246 W tiveboilerplat: Unable to resolve Lcom/wix/detox/common/proxy/MethodsSpy; annotation class 2323
+07-27 14:47:14.230 12227 12246 W tiveboilerplat: Unable to resolve Lcom/wix/detox/common/proxy/SpyingInvocationHandler; annotation class 2323
+07-27 14:47:14.230 12227 12246 I chatty  : uid=10114(com.reactnativeboilerplate) roidJUnitRunner identical 1 line
+07-27 14:47:14.230 12227 12246 W tiveboilerplat: Unable to resolve Lcom/wix/detox/common/proxy/SpyingInvocationHandler; annotation class 2323
+07-27 14:47:14.230 12227 12246 W tiveboilerplat: Unable to resolve Lcom/wix/detox/config/DetoxConfig; annotation class 2323
+07-27 14:47:14.230 12227 12246 I chatty  : uid=10114(com.reactnativeboilerplate) roidJUnitRunner identical 1 line
+07-27 14:47:14.230 12227 12246 W tiveboilerplat: Unable to resolve Lcom/wix/detox/config/DetoxConfig; annotation class 2323
+07-27 14:47:14.230 12227 12246 W tiveboilerplat: Unable to resolve Lcom/wix/detox/config/DetoxIdlePolicyConfig; annotation class 2323
+07-27 14:47:14.230 12227 12246 I chatty  : uid=10114(com.reactnativeboilerplate) roidJUnitRunner identical 1 line
+07-27 14:47:14.231 12227 12246 W tiveboilerplat: Unable to resolve Lcom/wix/detox/config/DetoxIdlePolicyConfig; annotation class 2323
+07-27 14:47:14.231 12227 12246 W tiveboilerplat: Unable to resolve Lcom/wix/detox/espresso/DeviceDisplay; annotation class 2323
+07-27 14:47:14.231 12227 12246 I chatty  : uid=10114(com.reactnativeboilerplate) roidJUnitRunner identical 1 line
+07-27 14:47:14.231 12227 12246 W tiveboilerplat: Unable to resolve Lcom/wix/detox/espresso/DeviceDisplay; annotation class 2323
+07-27 14:47:14.231 12227 12246 W tiveboilerplat: Unable to resolve Lcom/wix/detox/espresso/EventsInjectorReflected; annotation class 2323
+07-27 14:47:14.231 12227 12246 I chatty  : uid=10114(com.reactnativeboilerplate) roidJUnitRunner identical 1 line
+07-27 14:47:14.231 12227 12246 W tiveboilerplat: Unable to resolve Lcom/wix/detox/espresso/EventsInjectorReflected; annotation class 2323
+07-27 14:47:14.231 12227 12246 W tiveboilerplat: Unable to resolve Lcom/wix/detox/espresso/UiControllerSpy; annotation class 2323
+07-27 14:47:14.232 12227 12246 W tiveboilerplat: Unable to resolve Lcom/wix/detox/espresso/UiControllerSpy; annotation class 2323
+07-27 14:47:14.232 12227 12246 W tiveboilerplat: Unable to resolve Lcom/wix/detox/common/proxy/MethodsSpy; annotation class 2323
+07-27 14:47:14.232 12227 12246 W tiveboilerplat: Unable to resolve Lcom/wix/detox/espresso/UiControllerSpy; annotation class 2323
+07-27 14:47:14.232 12227 12246 W tiveboilerplat: Unable to resolve Lcom/wix/detox/common/proxy/MethodsSpy; annotation class 2323
+07-27 14:47:14.232 12227 12246 W tiveboilerplat: Unable to resolve Lcom/wix/detox/espresso/action/AdjustSliderToPositionAction; annotation class 2323
+07-27 14:47:14.232 12227 12246 I chatty  : uid=10114(com.reactnativeboilerplate) roidJUnitRunner identical 1 line
+07-27 14:47:14.232 12227 12246 W tiveboilerplat: Unable to resolve Lcom/wix/detox/espresso/action/AdjustSliderToPositionAction; annotation class 2323
+07-27 14:47:14.232 12227 12246 W tiveboilerplat: Unable to resolve Lcom/wix/detox/espresso/action/CheckBoxAttributes; annotation class 2323
+07-27 14:47:14.232 12227 12246 I chatty  : uid=10114(com.reactnativeboilerplate) roidJUnitRunner identical 1 line
+07-27 14:47:14.232 12227 12246 W tiveboilerplat: Unable to resolve Lcom/wix/detox/espresso/action/CheckBoxAttributes; annotation class 2323
+07-27 14:47:14.233 12227 12246 W tiveboilerplat: Unable to resolve Lcom/wix/detox/espresso/action/CommonAttributes; annotation class 2323
+07-27 14:47:14.233 12227 12246 I chatty  : uid=10114(com.reactnativeboilerplate) roidJUnitRunner identical 1 line
+07-27 14:47:14.233 12227 12246 W tiveboilerplat: Unable to resolve Lcom/wix/detox/espresso/action/CommonAttributes; annotation class 2323
+07-27 14:47:14.233 12227 12246 W tiveboilerplat: Unable to resolve Lcom/wix/detox/espresso/action/DetoxMultiTap; annotation class 2323
+07-27 14:47:14.233 12227 12246 I chatty  : uid=10114(com.reactnativeboilerplate) roidJUnitRunner identical 1 line
+07-27 14:47:14.233 12227 12246 W tiveboilerplat: Unable to resolve Lcom/wix/detox/espresso/action/DetoxMultiTap; annotation class 2323
+07-27 14:47:14.233 12227 12246 W tiveboilerplat: Unable to resolve Lcom/wix/detox/espresso/action/DetoxSingleTap; annotation class 2323
+07-27 14:47:14.233 12227 12246 W tiveboilerplat: Unable to resolve Lcom/wix/detox/espresso/action/DetoxSingleTap; annotation class 2323
+07-27 14:47:14.233 12227 12246 W tiveboilerplat: Unable to resolve Lcom/wix/detox/espresso/action/DetoxMultiTap; annotation class 2323
+07-27 14:47:14.234 12227 12246 W tiveboilerplat: Unable to resolve Lcom/wix/detox/espresso/action/DetoxSingleTap; annotation class 2323
+07-27 14:47:14.234 12227 12246 W tiveboilerplat: Unable to resolve Lcom/wix/detox/espresso/action/DetoxMultiTap; annotation class 2323
+07-27 14:47:14.234 12227 12246 W tiveboilerplat: Unable to resolve Lcom/wix/detox/espresso/action/GetAttributesAction; annotation class 2323
+07-27 14:47:14.234 12227 12246 I chatty  : uid=10114(com.reactnativeboilerplate) roidJUnitRunner identical 1 line
+07-27 14:47:14.234 12227 12246 W tiveboilerplat: Unable to resolve Lcom/wix/detox/espresso/action/GetAttributesAction; annotation class 2323
+07-27 14:47:14.234 12227 12246 W tiveboilerplat: Unable to resolve Lcom/wix/detox/espresso/action/ProgressBarAttributes; annotation class 2323
+07-27 14:47:14.234 12227 12246 I chatty  : uid=10114(com.reactnativeboilerplate) roidJUnitRunner identical 1 line
+07-27 14:47:14.234 12227 12246 W tiveboilerplat: Unable to resolve Lcom/wix/detox/espresso/action/ProgressBarAttributes; annotation class 2323
+07-27 14:47:14.234 12227 12246 W tiveboilerplat: Unable to resolve Lcom/wix/detox/espresso/action/ScreenshotResult; annotation class 2323
+07-27 14:47:14.234 12227 12246 I chatty  : uid=10114(com.reactnativeboilerplate) roidJUnitRunner identical 1 line
+07-27 14:47:14.234 12227 12246 W tiveboilerplat: Unable to resolve Lcom/wix/detox/espresso/action/ScreenshotResult; annotation class 2323
+07-27 14:47:14.235 12227 12246 W tiveboilerplat: Unable to resolve Lcom/wix/detox/espresso/action/ScrollToIndexAction; annotation class 2323
+07-27 14:47:14.235 12227 12246 I chatty  : uid=10114(com.reactnativeboilerplate) roidJUnitRunner identical 1 line
+07-27 14:47:14.235 12227 12246 W tiveboilerplat: Unable to resolve Lcom/wix/detox/espresso/action/ScrollToIndexAction; annotation class 2323
+07-27 14:47:14.235 12227 12246 W tiveboilerplat: Unable to resolve Lcom/wix/detox/espresso/action/ScrollToIndexActionKt; annotation class 2323
+07-27 14:47:14.235 12227 12246 I chatty  : uid=10114(com.reactnativeboilerplate) roidJUnitRunner identical 1 line
+07-27 14:47:14.235 12227 12246 W tiveboilerplat: Unable to resolve Lcom/wix/detox/espresso/action/ScrollToIndexActionKt; annotation class 2323
+07-27 14:47:14.235 12227 12246 W tiveboilerplat: Unable to resolve Lcom/wix/detox/espresso/action/SliderAttributes; annotation class 2323
+07-27 14:47:14.236 12227 12246 I chatty  : uid=10114(com.reactnativeboilerplate) roidJUnitRunner identical 1 line
+07-27 14:47:14.236 12227 12246 W tiveboilerplat: Unable to resolve Lcom/wix/detox/espresso/action/SliderAttributes; annotation class 2323
+07-27 14:47:14.236 12227 12246 W tiveboilerplat: Unable to resolve Lcom/wix/detox/espresso/action/TakeViewScreenshotAction; annotation class 2323
+07-27 14:47:14.236 12227 12246 I chatty  : uid=10114(com.reactnativeboilerplate) roidJUnitRunner identical 1 line
+07-27 14:47:14.236 12227 12246 W tiveboilerplat: Unable to resolve Lcom/wix/detox/espresso/action/TakeViewScreenshotAction; annotation class 2323
+07-27 14:47:14.236 12227 12246 W tiveboilerplat: Unable to resolve Lcom/wix/detox/espresso/action/TextViewAttributes; annotation class 2323
+07-27 14:47:14.236 12227 12246 I chatty  : uid=10114(com.reactnativeboilerplate) roidJUnitRunner identical 1 line
+07-27 14:47:14.236 12227 12246 W tiveboilerplat: Unable to resolve Lcom/wix/detox/espresso/action/TextViewAttributes; annotation class 2323
+07-27 14:47:14.237 12227 12246 W tiveboilerplat: Unable to resolve Lcom/wix/detox/espresso/action/ViewScreenshot; annotation class 2323
+07-27 14:47:14.237 12227 12246 I chatty  : uid=10114(com.reactnativeboilerplate) roidJUnitRunner identical 1 line
+07-27 14:47:14.237 12227 12246 W tiveboilerplat: Unable to resolve Lcom/wix/detox/espresso/action/ViewScreenshot; annotation class 2323
+07-27 14:47:14.237 12227 12246 W tiveboilerplat: Unable to resolve Lcom/wix/detox/espresso/action/common/DetoxViewConfigurationKt; annotation class 2323
+07-27 14:47:14.237 12227 12246 I chatty  : uid=10114(com.reactnativeboilerplate) roidJUnitRunner identical 1 line
+07-27 14:47:14.237 12227 12246 W tiveboilerplat: Unable to resolve Lcom/wix/detox/espresso/action/common/DetoxViewConfigurationKt; annotation class 2323
+07-27 14:47:14.237 12227 12246 W tiveboilerplat: Unable to resolve Lcom/wix/detox/espresso/action/common/DetoxViewConfigurations; annotation class 2323
+07-27 14:47:14.237 12227 12246 I chatty  : uid=10114(com.reactnativeboilerplate) roidJUnitRunner identical 1 line
+07-27 14:47:14.237 12227 12246 W tiveboilerplat: Unable to resolve Lcom/wix/detox/espresso/action/common/DetoxViewConfigurations; annotation class 2323
+07-27 14:47:14.237 12227 12246 W tiveboilerplat: Unable to resolve Lcom/wix/detox/espresso/action/common/MotionEvents; annotation class 2323
+07-27 14:47:14.237 12227 12246 I chatty  : uid=10114(com.reactnativeboilerplate) roidJUnitRunner identical 1 line
+07-27 14:47:14.237 12227 12246 W tiveboilerplat: Unable to resolve Lcom/wix/detox/espresso/action/common/MotionEvents; annotation class 2323
+07-27 14:47:14.238 12227 12246 W tiveboilerplat: Unable to resolve Lcom/wix/detox/espresso/action/common/MotionEventsKt; annotation class 2323
+07-27 14:47:14.238 12227 12246 I chatty  : uid=10114(com.reactnativeboilerplate) roidJUnitRunner identical 1 line
+07-27 14:47:14.238 12227 12246 W tiveboilerplat: Unable to resolve Lcom/wix/detox/espresso/action/common/MotionEventsKt; annotation class 2323
+07-27 14:47:14.238 12227 12246 W tiveboilerplat: Unable to resolve Lcom/wix/detox/espresso/action/common/ReflectUtils; annotation class 2323
+07-27 14:47:14.238 12227 12246 I chatty  : uid=10114(com.reactnativeboilerplate) roidJUnitRunner identical 1 line
+07-27 14:47:14.238 12227 12246 W tiveboilerplat: Unable to resolve Lcom/wix/detox/espresso/action/common/ReflectUtils; annotation class 2323
+07-27 14:47:14.238 12227 12246 W tiveboilerplat: Unable to resolve Lcom/wix/detox/espresso/action/common/TapEvents; annotation class 2323
+07-27 14:47:14.238 12227 12246 I chatty  : uid=10114(com.reactnativeboilerplate) roidJUnitRunner identical 1 line
+07-27 14:47:14.238 12227 12246 W tiveboilerplat: Unable to resolve Lcom/wix/detox/espresso/action/common/TapEvents; annotation class 2323
+07-27 14:47:14.238 12227 12246 W tiveboilerplat: Unable to resolve Lcom/wix/detox/espresso/action/common/TapEventsKt; annotation class 2323
+07-27 14:47:14.238 12227 12246 I chatty  : uid=10114(com.reactnativeboilerplate) roidJUnitRunner identical 1 line
+07-27 14:47:14.238 12227 12246 W tiveboilerplat: Unable to resolve Lcom/wix/detox/espresso/action/common/TapEventsKt; annotation class 2323
+07-27 14:47:14.239 12227 12246 W tiveboilerplat: Unable to resolve Lcom/wix/detox/espresso/common/CommunitySliderHelper; annotation class 2323
+07-27 14:47:14.239 12227 12246 W tiveboilerplat: Unable to resolve Lcom/wix/detox/espresso/common/CommunitySliderHelper; annotation class 2323
+07-27 14:47:14.239 12227 12246 W tiveboilerplat: Unable to resolve Lcom/wix/detox/espresso/common/SliderHelper; annotation class 2323
+07-27 14:47:14.239 12227 12246 W tiveboilerplat: Unable to resolve Lcom/wix/detox/espresso/common/CommunitySliderHelper; annotation class 2323
+07-27 14:47:14.239 12227 12246 W tiveboilerplat: Unable to resolve Lcom/wix/detox/espresso/common/SliderHelper; annotation class 2323
+07-27 14:47:14.239 12227 12246 W tiveboilerplat: Unable to resolve Lcom/wix/detox/espresso/common/LegacySliderHelper; annotation class 2323
+07-27 14:47:14.239 12227 12246 W tiveboilerplat: Unable to resolve Lcom/wix/detox/espresso/common/LegacySliderHelper; annotation class 2323
+07-27 14:47:14.239 12227 12246 W tiveboilerplat: Unable to resolve Lcom/wix/detox/espresso/common/SliderHelper; annotation class 2323
+07-27 14:47:14.239 12227 12246 W tiveboilerplat: Unable to resolve Lcom/wix/detox/espresso/common/LegacySliderHelper; annotation class 2323
+07-27 14:47:14.239 12227 12246 W tiveboilerplat: Unable to resolve Lcom/wix/detox/espresso/common/SliderHelper; annotation class 2323
+07-27 14:47:14.239 12227 12246 W tiveboilerplat: Unable to resolve Lcom/wix/detox/espresso/common/SliderHelperKt; annotation class 2323
+07-27 14:47:14.239 12227 12246 I chatty  : uid=10114(com.reactnativeboilerplate) roidJUnitRunner identical 1 line
+07-27 14:47:14.239 12227 12246 W tiveboilerplat: Unable to resolve Lcom/wix/detox/espresso/common/SliderHelperKt; annotation class 2323
+07-27 14:47:14.240 12227 12246 W tiveboilerplat: Unable to resolve Lcom/wix/detox/espresso/common/utils/UiControllerUtils; annotation class 2323
+07-27 14:47:14.240 12227 12246 I chatty  : uid=10114(com.reactnativeboilerplate) roidJUnitRunner identical 1 line
+07-27 14:47:14.240 12227 12246 W tiveboilerplat: Unable to resolve Lcom/wix/detox/espresso/common/utils/UiControllerUtils; annotation class 2323
+07-27 14:47:14.240 12227 12246 W tiveboilerplat: Unable to resolve Lcom/wix/detox/espresso/matcher/IsAssignableFromMatcher; annotation class 2323
+07-27 14:47:14.240 12227 12246 I chatty  : uid=10114(com.reactnativeboilerplate) roidJUnitRunner identical 1 line
+07-27 14:47:14.240 12227 12246 W tiveboilerplat: Unable to resolve Lcom/wix/detox/espresso/matcher/IsAssignableFromMatcher; annotation class 2323
+07-27 14:47:14.240 12227 12246 W tiveboilerplat: Unable to resolve Lcom/wix/detox/espresso/matcher/ViewAtIndexMatcher; annotation class 2323
+07-27 14:47:14.240 12227 12246 I chatty  : uid=10114(com.reactnativeboilerplate) roidJUnitRunner identical 1 line
+07-27 14:47:14.240 12227 12246 W tiveboilerplat: Unable to resolve Lcom/wix/detox/espresso/matcher/ViewAtIndexMatcher; annotation class 2323
+07-27 14:47:14.240 12227 12246 W tiveboilerplat: Unable to resolve Lcom/wix/detox/espresso/matcher/ViewMatchers; annotation class 2323
+07-27 14:47:14.240 12227 12246 I chatty  : uid=10114(com.reactnativeboilerplate) roidJUnitRunner identical 1 line
+07-27 14:47:14.240 12227 12246 W tiveboilerplat: Unable to resolve Lcom/wix/detox/espresso/matcher/ViewMatchers; annotation class 2323
+07-27 14:47:14.241 12227 12246 W tiveboilerplat: Unable to resolve Lcom/wix/detox/espresso/registry/IRStatusInquirer; annotation class 2323
+07-27 14:47:14.241 12227 12246 I chatty  : uid=10114(com.reactnativeboilerplate) roidJUnitRunner identical 1 line
+07-27 14:47:14.241 12227 12246 W tiveboilerplat: Unable to resolve Lcom/wix/detox/espresso/registry/IRStatusInquirer; annotation class 2323
+07-27 14:47:14.241 12227 12246 W tiveboilerplat: Unable to resolve Lcom/wix/detox/espresso/registry/IRStatusInquirerKt; annotation class 2323
+07-27 14:47:14.241 12227 12246 I chatty  : uid=10114(com.reactnativeboilerplate) roidJUnitRunner identical 1 line
+07-27 14:47:14.241 12227 12246 W tiveboilerplat: Unable to resolve Lcom/wix/detox/espresso/registry/IRStatusInquirerKt; annotation class 2323
+07-27 14:47:14.241 12227 12246 W tiveboilerplat: Unable to resolve Lcom/wix/detox/espresso/scroll/AbsListViewBack; annotation class 2323
+07-27 14:47:14.241 12227 12246 I chatty  : uid=10114(com.reactnativeboilerplate) roidJUnitRunner identical 1 line
+07-27 14:47:14.241 12227 12246 W tiveboilerplat: Unable to resolve Lcom/wix/detox/espresso/scroll/AbsListViewBack; annotation class 2323
+07-27 14:47:14.241 12227 12246 W tiveboilerplat: Unable to resolve Lcom/wix/detox/espresso/scroll/AbsListViewForward; annotation class 2323
+07-27 14:47:14.241 12227 12246 I chatty  : uid=10114(com.reactnativeboilerplate) roidJUnitRunner identical 1 line
+07-27 14:47:14.241 12227 12246 W tiveboilerplat: Unable to resolve Lcom/wix/detox/espresso/scroll/AbsListViewForward; annotation class 2323
+07-27 14:47:14.242 12227 12246 W tiveboilerplat: Unable to resolve Lcom/wix/detox/espresso/scroll/DetoxScrollAction; annotation class 2323
+07-27 14:47:14.242 12227 12246 W tiveboilerplat: Unable to resolve Lcom/wix/detox/espresso/scroll/DetoxScrollAction; annotation class 2323
+07-27 14:47:14.242 12227 12246 W tiveboilerplat: Unable to resolve Lcom/wix/detox/espresso/scroll/DetoxScrollActionBase; annotation class 2323
+07-27 14:47:14.242 12227 12246 W tiveboilerplat: Unable to resolve Lcom/wix/detox/espresso/scroll/DetoxScrollAction; annotation class 2323
+07-27 14:47:14.242 12227 12246 W tiveboilerplat: Unable to resolve Lcom/wix/detox/espresso/scroll/DetoxScrollActionBase; annotation class 2323
+07-27 14:47:14.242 12227 12246 W tiveboilerplat: Unable to resolve Lcom/wix/detox/espresso/scroll/DetoxScrollActionStaleAtEdge; annotation class 2323
+07-27 14:47:14.242 12227 12246 W tiveboilerplat: Unable to resolve Lcom/wix/detox/espresso/scroll/DetoxScrollActionStaleAtEdge; annotation class 2323
+07-27 14:47:14.242 12227 12246 W tiveboilerplat: Unable to resolve Lcom/wix/detox/espresso/scroll/DetoxScrollActionBase; annotation class 2323
+07-27 14:47:14.242 12227 12246 W tiveboilerplat: Unable to resolve Lcom/wix/detox/espresso/scroll/DetoxScrollActionStaleAtEdge; annotation class 2323
+07-27 14:47:14.242 12227 12246 W tiveboilerplat: Unable to resolve Lcom/wix/detox/espresso/scroll/DetoxScrollActionBase; annotation class 2323
+07-27 14:47:14.242 12227 12246 W tiveboilerplat: Unable to resolve Lcom/wix/detox/espresso/scroll/DetoxSwipe; annotation class 2323
+07-27 14:47:14.242 12227 12246 I chatty  : uid=10114(com.reactnativeboilerplate) roidJUnitRunner identical 1 line
+07-27 14:47:14.242 12227 12246 W tiveboilerplat: Unable to resolve Lcom/wix/detox/espresso/scroll/DetoxSwipe; annotation class 2323
+07-27 14:47:14.243 12227 12246 W tiveboilerplat: Unable to resolve Lcom/wix/detox/espresso/scroll/FlinglessSwiper; annotation class 2323
+07-27 14:47:14.243 12227 12246 I chatty  : uid=10114(com.reactnativeboilerplate) roidJUnitRunner identical 1 line
+07-27 14:47:14.243 12227 12246 W tiveboilerplat: Unable to resolve Lcom/wix/detox/espresso/scroll/FlinglessSwiper; annotation class 2323
+07-27 14:47:14.243 12227 12246 W tiveboilerplat: Unable to resolve Lcom/wix/detox/espresso/scroll/ScrollEdgeException; annotation class 2323
+07-27 14:47:14.243 12227 12246 I chatty  : uid=10114(com.reactnativeboilerplate) roidJUnitRunner identical 1 line
+07-27 14:47:14.243 12227 12246 W tiveboilerplat: Unable to resolve Lcom/wix/detox/espresso/scroll/ScrollEdgeException; annotation class 2323
+07-27 14:47:14.243 12227 12246 W tiveboilerplat: Unable to resolve Lcom/wix/detox/espresso/scroll/ScrollProbes; annotation class 2323
+07-27 14:47:14.243 12227 12246 I chatty  : uid=10114(com.reactnativeboilerplate) roidJUnitRunner identical 1 line
+07-27 14:47:14.243 12227 12246 W tiveboilerplat: Unable to resolve Lcom/wix/detox/espresso/scroll/ScrollProbes; annotation class 2323
+07-27 14:47:14.243 12227 12246 W tiveboilerplat: Unable to resolve Lcom/wix/detox/espresso/scroll/ScrollableProbeHBack; annotation class 2323
+07-27 14:47:14.243 12227 12246 W tiveboilerplat: Unable to resolve Lcom/wix/detox/espresso/scroll/ScrollableProbeHBack; annotation class 2323
+07-27 14:47:14.244 12227 12246 W tiveboilerplat: Unable to resolve Lcom/wix/detox/espresso/scroll/AbsScrollableProbe; annotation class 2323
+07-27 14:47:14.244 12227 12246 W tiveboilerplat: Unable to resolve Lcom/wix/detox/espresso/scroll/ScrollableProbeHBack; annotation class 2323
+07-27 14:47:14.244 12227 12246 W tiveboilerplat: Unable to resolve Lcom/wix/detox/espresso/scroll/AbsScrollableProbe; annotation class 2323
+07-27 14:47:14.244 12227 12246 W tiveboilerplat: Unable to resolve Lcom/wix/detox/espresso/scroll/ScrollableProbeHForward; annotation class 2323
+07-27 14:47:14.244 12227 12246 W tiveboilerplat: Unable to resolve Lcom/wix/detox/espresso/scroll/ScrollableProbeHForward; annotation class 2323
+07-27 14:47:14.244 12227 12246 W tiveboilerplat: Unable to resolve Lcom/wix/detox/espresso/scroll/AbsScrollableProbe; annotation class 2323
+07-27 14:47:14.244 12227 12246 W tiveboilerplat: Unable to resolve Lcom/wix/detox/espresso/scroll/ScrollableProbeHForward; annotation class 2323
+07-27 14:47:14.244 12227 12246 W tiveboilerplat: Unable to resolve Lcom/wix/detox/espresso/scroll/AbsScrollableProbe; annotation class 2323
+07-27 14:47:14.244 12227 12246 W tiveboilerplat: Unable to resolve Lcom/wix/detox/espresso/scroll/ScrollableProbeVBack; annotation class 2323
+07-27 14:47:14.244 12227 12246 W tiveboilerplat: Unable to resolve Lcom/wix/detox/espresso/scroll/ScrollableProbeVBack; annotation class 2323
+07-27 14:47:14.244 12227 12246 W tiveboilerplat: Unable to resolve Lcom/wix/detox/espresso/scroll/AbsScrollableProbe; annotation class 2323
+07-27 14:47:14.244 12227 12246 W tiveboilerplat: Unable to resolve Lcom/wix/detox/espresso/scroll/ScrollableProbeVBack; annotation class 2323
+07-27 14:47:14.244 12227 12246 W tiveboilerplat: Unable to resolve Lcom/wix/detox/espresso/scroll/AbsScrollableProbe; annotation class 2323
+07-27 14:47:14.245 12227 12246 W tiveboilerplat: Unable to resolve Lcom/wix/detox/espresso/scroll/ScrollableProbeVForward; annotation class 2323
+07-27 14:47:14.245 12227 12246 W tiveboilerplat: Unable to resolve Lcom/wix/detox/espresso/scroll/ScrollableProbeVForward; annotation class 2323
+07-27 14:47:14.245 12227 12246 W tiveboilerplat: Unable to resolve Lcom/wix/detox/espresso/scroll/AbsScrollableProbe; annotation class 2323
+07-27 14:47:14.245 12227 12246 W tiveboilerplat: Unable to resolve Lcom/wix/detox/espresso/scroll/ScrollableProbeVForward; annotation class 2323
+07-27 14:47:14.245 12227 12246 W tiveboilerplat: Unable to resolve Lcom/wix/detox/espresso/scroll/AbsScrollableProbe; annotation class 2323
+07-27 14:47:14.245 12227 12246 W tiveboilerplat: Unable to resolve Lcom/wix/detox/espresso/scroll/SwipeHelper; annotation class 2323
+07-27 14:47:14.245 12227 12246 I chatty  : uid=10114(com.reactnativeboilerplate) roidJUnitRunner identical 1 line
+07-27 14:47:14.246 12227 12246 W tiveboilerplat: Unable to resolve Lcom/wix/detox/espresso/scroll/SwipeHelper; annotation class 2323
+07-27 14:47:14.246 12227 12246 W tiveboilerplat: Unable to resolve Lcom/wix/detox/espresso/scroll/SwipeHelperKt; annotation class 2323
+07-27 14:47:14.246 12227 12246 I chatty  : uid=10114(com.reactnativeboilerplate) roidJUnitRunner identical 1 line
+07-27 14:47:14.246 12227 12246 W tiveboilerplat: Unable to resolve Lcom/wix/detox/espresso/scroll/SwipeHelperKt; annotation class 2323
+07-27 14:47:14.246 12227 12246 W tiveboilerplat: Unable to resolve Lcom/wix/detox/espresso/utils/Vector2D; annotation class 2323
+07-27 14:47:14.246 12227 12246 I chatty  : uid=10114(com.reactnativeboilerplate) roidJUnitRunner identical 1 line
+07-27 14:47:14.246 12227 12246 W tiveboilerplat: Unable to resolve Lcom/wix/detox/espresso/utils/Vector2D; annotation class 2323
+07-27 14:47:14.247 12227 12246 W tiveboilerplat: Unable to resolve Lcom/wix/detox/espresso/utils/Vector2DKt; annotation class 2323
+07-27 14:47:14.247 12227 12246 I chatty  : uid=10114(com.reactnativeboilerplate) roidJUnitRunner identical 1 line
+07-27 14:47:14.247 12227 12246 W tiveboilerplat: Unable to resolve Lcom/wix/detox/espresso/utils/Vector2DKt; annotation class 2323
+07-27 14:47:14.248 12227 12246 W tiveboilerplat: Unable to resolve Lcom/wix/detox/reactnative/MQThreadReflected; annotation class 2323
+07-27 14:47:14.249 12227 12246 I chatty  : uid=10114(com.reactnativeboilerplate) roidJUnitRunner identical 1 line
+07-27 14:47:14.249 12227 12246 W tiveboilerplat: Unable to resolve Lcom/wix/detox/reactnative/MQThreadReflected; annotation class 2323
+07-27 14:47:14.249 12227 12246 W tiveboilerplat: Unable to resolve Lcom/wix/detox/reactnative/MQThreadsReflector; annotation class 2323
+07-27 14:47:14.249 12227 12246 I chatty  : uid=10114(com.reactnativeboilerplate) roidJUnitRunner identical 1 line
+07-27 14:47:14.249 12227 12246 W tiveboilerplat: Unable to resolve Lcom/wix/detox/reactnative/MQThreadsReflector; annotation class 2323
+07-27 14:47:14.249 12227 12246 W tiveboilerplat: Unable to resolve Lcom/wix/detox/reactnative/RNVersion; annotation class 2323
+07-27 14:47:14.249 12227 12246 I chatty  : uid=10114(com.reactnativeboilerplate) roidJUnitRunner identical 1 line
+07-27 14:47:14.249 12227 12246 W tiveboilerplat: Unable to resolve Lcom/wix/detox/reactnative/RNVersion; annotation class 2323
+07-27 14:47:14.249 12227 12246 W tiveboilerplat: Unable to resolve Lcom/wix/detox/reactnative/ReactNativeExtension; annotation class 2323
+07-27 14:47:14.249 12227 12246 I chatty  : uid=10114(com.reactnativeboilerplate) roidJUnitRunner identical 1 line
+07-27 14:47:14.249 12227 12246 W tiveboilerplat: Unable to resolve Lcom/wix/detox/reactnative/ReactNativeExtension; annotation class 2323
+07-27 14:47:14.250 12227 12246 W tiveboilerplat: Unable to resolve Lcom/wix/detox/reactnative/ReactNativeExtensionKt; annotation class 2323
+07-27 14:47:14.250 12227 12246 I chatty  : uid=10114(com.reactnativeboilerplate) roidJUnitRunner identical 1 line
+07-27 14:47:14.250 12227 12246 W tiveboilerplat: Unable to resolve Lcom/wix/detox/reactnative/ReactNativeExtensionKt; annotation class 2323
+07-27 14:47:14.250 12227 12246 W tiveboilerplat: Unable to resolve Lcom/wix/detox/reactnative/ReactNativeIdlingResources; annotation class 2323
+07-27 14:47:14.250 12227 12246 I chatty  : uid=10114(com.reactnativeboilerplate) roidJUnitRunner identical 1 line
+07-27 14:47:14.250 12227 12246 W tiveboilerplat: Unable to resolve Lcom/wix/detox/reactnative/ReactNativeIdlingResources; annotation class 2323
+07-27 14:47:14.250 12227 12246 W tiveboilerplat: Unable to resolve Lcom/wix/detox/reactnative/ReactNativeIdlingResourcesKt; annotation class 2323
+07-27 14:47:14.250 12227 12246 I chatty  : uid=10114(com.reactnativeboilerplate) roidJUnitRunner identical 1 line
+07-27 14:47:14.250 12227 12246 W tiveboilerplat: Unable to resolve Lcom/wix/detox/reactnative/ReactNativeIdlingResourcesKt; annotation class 2323
+07-27 14:47:14.250 12227 12246 W tiveboilerplat: Unable to resolve Lcom/wix/detox/reactnative/ReactNativeInfo; annotation class 2323
+07-27 14:47:14.250 12227 12246 I chatty  : uid=10114(com.reactnativeboilerplate) roidJUnitRunner identical 1 line
+07-27 14:47:14.250 12227 12246 W tiveboilerplat: Unable to resolve Lcom/wix/detox/reactnative/ReactNativeInfo; annotation class 2323
+07-27 14:47:14.251 12227 12246 W tiveboilerplat: Unable to resolve Lcom/wix/detox/reactnative/ReactNativeLoadingMonitor; annotation class 2323
+07-27 14:47:14.251 12227 12246 I chatty  : uid=10114(com.reactnativeboilerplate) roidJUnitRunner identical 1 line
+07-27 14:47:14.251 12227 12246 W tiveboilerplat: Unable to resolve Lcom/wix/detox/reactnative/ReactNativeLoadingMonitor; annotation class 2323
+07-27 14:47:14.251 12227 12246 W tiveboilerplat: Unable to resolve Lcom/wix/detox/reactnative/ReactNativeLoadingMonitorKt; annotation class 2323
+07-27 14:47:14.251 12227 12246 I chatty  : uid=10114(com.reactnativeboilerplate) roidJUnitRunner identical 1 line
+07-27 14:47:14.251 12227 12246 W tiveboilerplat: Unable to resolve Lcom/wix/detox/reactnative/ReactNativeLoadingMonitorKt; annotation class 2323
+07-27 14:47:14.251 12227 12246 W tiveboilerplat: Unable to resolve Lcom/wix/detox/reactnative/ReactNativeReLoader; annotation class 2323
+07-27 14:47:14.251 12227 12246 I chatty  : uid=10114(com.reactnativeboilerplate) roidJUnitRunner identical 1 line
+07-27 14:47:14.251 12227 12246 W tiveboilerplat: Unable to resolve Lcom/wix/detox/reactnative/ReactNativeReLoader; annotation class 2323
+07-27 14:47:14.251 12227 12246 W tiveboilerplat: Unable to resolve Lcom/wix/detox/reactnative/helpers/RNHelpers; annotation class 2323
+07-27 14:47:14.251 12227 12246 I chatty  : uid=10114(com.reactnativeboilerplate) roidJUnitRunner identical 1 line
+07-27 14:47:14.251 12227 12246 W tiveboilerplat: Unable to resolve Lcom/wix/detox/reactnative/helpers/RNHelpers; annotation class 2323
+07-27 14:47:14.252 12227 12246 W tiveboilerplat: Unable to resolve Lcom/wix/detox/reactnative/helpers/RNHelpersKt; annotation class 2323
+07-27 14:47:14.252 12227 12246 I chatty  : uid=10114(com.reactnativeboilerplate) roidJUnitRunner identical 1 line
+07-27 14:47:14.252 12227 12246 W tiveboilerplat: Unable to resolve Lcom/wix/detox/reactnative/helpers/RNHelpersKt; annotation class 2323
+07-27 14:47:14.252 12227 12246 W tiveboilerplat: Unable to resolve Lcom/wix/detox/reactnative/idlingresources/AsyncStorageIdlingResource; annotation class 2323
+07-27 14:47:14.252 12227 12246 I chatty  : uid=10114(com.reactnativeboilerplate) roidJUnitRunner identical 1 line
+07-27 14:47:14.252 12227 12246 W tiveboilerplat: Unable to resolve Lcom/wix/detox/reactnative/idlingresources/AsyncStorageIdlingResource; annotation class 2323
+07-27 14:47:14.252 12227 12246 W tiveboilerplat: Unable to resolve Lcom/wix/detox/reactnative/idlingresources/AsyncStorageIdlingResourceKt; annotation class 2323
+07-27 14:47:14.252 12227 12246 I chatty  : uid=10114(com.reactnativeboilerplate) roidJUnitRunner identical 1 line
+07-27 14:47:14.252 12227 12246 W tiveboilerplat: Unable to resolve Lcom/wix/detox/reactnative/idlingresources/AsyncStorageIdlingResourceKt; annotation class 2323
+07-27 14:47:14.252 12227 12246 W tiveboilerplat: Unable to resolve Lcom/wix/detox/reactnative/idlingresources/AsyncStorageIdlingResourceLegacy; annotation class 2323
+07-27 14:47:14.253 12227 12246 W tiveboilerplat: Unable to resolve Lcom/wix/detox/reactnative/idlingresources/AsyncStorageIdlingResourceLegacy; annotation class 2323
+07-27 14:47:14.253 12227 12246 W tiveboilerplat: Unable to resolve Lcom/wix/detox/reactnative/idlingresources/AsyncStorageIdlingResource; annotation class 2323
+07-27 14:47:14.253 12227 12246 W tiveboilerplat: Unable to resolve Lcom/wix/detox/reactnative/idlingresources/AsyncStorageIdlingResourceLegacy; annotation class 2323
+07-27 14:47:14.253 12227 12246 W tiveboilerplat: Unable to resolve Lcom/wix/detox/reactnative/idlingresources/AsyncStorageIdlingResource; annotation class 2323
+07-27 14:47:14.253 12227 12246 W tiveboilerplat: Unable to resolve Lcom/wix/detox/reactnative/idlingresources/IdlingResourceDescription; annotation class 2323
+07-27 14:47:14.253 12227 12246 I chatty  : uid=10114(com.reactnativeboilerplate) roidJUnitRunner identical 1 line
+07-27 14:47:14.253 12227 12246 W tiveboilerplat: Unable to resolve Lcom/wix/detox/reactnative/idlingresources/IdlingResourceDescription; annotation class 2323
+07-27 14:47:14.253 12227 12246 W tiveboilerplat: Unable to resolve Lcom/wix/detox/reactnative/idlingresources/ModuleReflected; annotation class 2323
+07-27 14:47:14.253 12227 12246 I chatty  : uid=10114(com.reactnativeboilerplate) roidJUnitRunner identical 1 line
+07-27 14:47:14.253 12227 12246 W tiveboilerplat: Unable to resolve Lcom/wix/detox/reactnative/idlingresources/ModuleReflected; annotation class 2323
+07-27 14:47:14.253 12227 12246 W tiveboilerplat: Unable to resolve Lcom/wix/detox/reactnative/idlingresources/NetworkingModuleReflected; annotation class 2323
+07-27 14:47:14.254 12227 12246 I chatty  : uid=10114(com.reactnativeboilerplate) roidJUnitRunner identical 1 line
+07-27 14:47:14.254 12227 12246 W tiveboilerplat: Unable to resolve Lcom/wix/detox/reactnative/idlingresources/NetworkingModuleReflected; annotation class 2323
+07-27 14:47:14.254 12227 12246 W tiveboilerplat: Unable to resolve Lcom/wix/detox/reactnative/idlingresources/SerialExecutorReflected; annotation class 2323
+07-27 14:47:14.254 12227 12246 I chatty  : uid=10114(com.reactnativeboilerplate) roidJUnitRunner identical 1 line
+07-27 14:47:14.254 12227 12246 W tiveboilerplat: Unable to resolve Lcom/wix/detox/reactnative/idlingresources/SerialExecutorReflected; annotation class 2323
+07-27 14:47:14.254 12227 12246 W tiveboilerplat: Unable to resolve Lcom/wix/detox/reactnative/idlingresources/timers/DefaultIdleInterrogationStrategy; annotation class 2323
+07-27 14:47:14.254 12227 12246 I chatty  : uid=10114(com.reactnativeboilerplate) roidJUnitRunner identical 1 line
+07-27 14:47:14.254 12227 12246 W tiveboilerplat: Unable to resolve Lcom/wix/detox/reactnative/idlingresources/timers/DefaultIdleInterrogationStrategy; annotation class 2323
+07-27 14:47:14.254 12227 12246 W tiveboilerplat: Unable to resolve Lcom/wix/detox/reactnative/idlingresources/timers/DefaultIdleInterrogationStrategyKt; annotation class 2323
+07-27 14:47:14.254 12227 12246 I chatty  : uid=10114(com.reactnativeboilerplate) roidJUnitRunner identical 1 line
+07-27 14:47:14.254 12227 12246 W tiveboilerplat: Unable to resolve Lcom/wix/detox/reactnative/idlingresources/timers/DefaultIdleInterrogationStrategyKt; annotation class 2323
+07-27 14:47:14.254 12227 12246 W tiveboilerplat: Unable to resolve Lcom/wix/detox/reactnative/idlingresources/timers/DelegatedIdleInterrogationStrategy; annotation class 2323
+07-27 14:47:14.254 12227 12246 I chatty  : uid=10114(com.reactnativeboilerplate) roidJUnitRunner identical 1 line
+07-27 14:47:14.255 12227 12246 W tiveboilerplat: Unable to resolve Lcom/wix/detox/reactnative/idlingresources/timers/DelegatedIdleInterrogationStrategy; annotation class 2323
+07-27 14:47:14.255 12227 12246 W tiveboilerplat: Unable to resolve Lcom/wix/detox/reactnative/idlingresources/timers/DelegatedIdleInterrogationStrategyKt; annotation class 2323
+07-27 14:47:14.255 12227 12246 I chatty  : uid=10114(com.reactnativeboilerplate) roidJUnitRunner identical 1 line
+07-27 14:47:14.255 12227 12246 W tiveboilerplat: Unable to resolve Lcom/wix/detox/reactnative/idlingresources/timers/DelegatedIdleInterrogationStrategyKt; annotation class 2323
+07-27 14:47:14.255 12227 12246 W tiveboilerplat: Unable to resolve Lcom/wix/detox/reactnative/idlingresources/timers/IdleInterrogationStrategyKt; annotation class 2323
+07-27 14:47:14.255 12227 12246 I chatty  : uid=10114(com.reactnativeboilerplate) roidJUnitRunner identical 1 line
+07-27 14:47:14.255 12227 12246 W tiveboilerplat: Unable to resolve Lcom/wix/detox/reactnative/idlingresources/timers/IdleInterrogationStrategyKt; annotation class 2323
+07-27 14:47:14.255 12227 12246 W tiveboilerplat: Unable to resolve Lcom/wix/detox/reactnative/idlingresources/timers/RN62TimingModuleReflected; annotation class 2323
+07-27 14:47:14.255 12227 12246 I chatty  : uid=10114(com.reactnativeboilerplate) roidJUnitRunner identical 1 line
+07-27 14:47:14.255 12227 12246 W tiveboilerplat: Unable to resolve Lcom/wix/detox/reactnative/idlingresources/timers/RN62TimingModuleReflected; annotation class 2323
+07-27 14:47:14.255 12227 12246 W tiveboilerplat: Unable to resolve Lcom/wix/detox/reactnative/idlingresources/timers/TimerReflected; annotation class 2323
+07-27 14:47:14.255 12227 12246 I chatty  : uid=10114(com.reactnativeboilerplate) roidJUnitRunner identical 1 line
+07-27 14:47:14.255 12227 12246 W tiveboilerplat: Unable to resolve Lcom/wix/detox/reactnative/idlingresources/timers/TimerReflected; annotation class 2323
+07-27 14:47:14.256 12227 12246 W tiveboilerplat: Unable to resolve Lcom/wix/detox/reactnative/idlingresources/timers/TimersIdlingResource; annotation class 2323
+07-27 14:47:14.256 12227 12246 I chatty  : uid=10114(com.reactnativeboilerplate) roidJUnitRunner identical 1 line
+07-27 14:47:14.256 12227 12246 W tiveboilerplat: Unable to resolve Lcom/wix/detox/reactnative/idlingresources/timers/TimersIdlingResource; annotation class 2323
+07-27 14:47:14.256 12227 12246 W tiveboilerplat: Unable to resolve Lcom/wix/detox/reactnative/idlingresources/timers/TimingModuleReflected; annotation class 2323
+07-27 14:47:14.256 12227 12246 I chatty  : uid=10114(com.reactnativeboilerplate) roidJUnitRunner identical 1 line
+07-27 14:47:14.256 12227 12246 W tiveboilerplat: Unable to resolve Lcom/wix/detox/reactnative/idlingresources/timers/TimingModuleReflected; annotation class 2323
+07-27 14:47:14.256 12227 12246 W tiveboilerplat: Unable to resolve Lcom/wix/detox/reactnative/idlingresources/uimodule/DispatchCommandOperationReflected; annotation class 2323
+07-27 14:47:14.256 12227 12246 I chatty  : uid=10114(com.reactnativeboilerplate) roidJUnitRunner identical 1 line
+07-27 14:47:14.256 12227 12246 W tiveboilerplat: Unable to resolve Lcom/wix/detox/reactnative/idlingresources/uimodule/DispatchCommandOperationReflected; annotation class 2323
+07-27 14:47:14.256 12227 12246 W tiveboilerplat: Unable to resolve Lcom/wix/detox/reactnative/idlingresources/uimodule/DispatchCommandOperationReflectedKt; annotation class 2323
+07-27 14:47:14.257 12227 12246 I chatty  : uid=10114(com.reactnativeboilerplate) roidJUnitRunner identical 1 line
+07-27 14:47:14.257 12227 12246 W tiveboilerplat: Unable to resolve Lcom/wix/detox/reactnative/idlingresources/uimodule/DispatchCommandOperationReflectedKt; annotation class 2323
+07-27 14:47:14.257 12227 12246 W tiveboilerplat: Unable to resolve Lcom/wix/detox/reactnative/idlingresources/uimodule/NativeHierarchyManagerReflected; annotation class 2323
+07-27 14:47:14.257 12227 12246 I chatty  : uid=10114(com.reactnativeboilerplate) roidJUnitRunner identical 1 line
+07-27 14:47:14.257 12227 12246 W tiveboilerplat: Unable to resolve Lcom/wix/detox/reactnative/idlingresources/uimodule/NativeHierarchyManagerReflected; annotation class 2323
+07-27 14:47:14.257 12227 12246 W tiveboilerplat: Unable to resolve Lcom/wix/detox/reactnative/idlingresources/uimodule/NativeHierarchyManagerReflectedKt; annotation class 2323
+07-27 14:47:14.257 12227 12246 I chatty  : uid=10114(com.reactnativeboilerplate) roidJUnitRunner identical 1 line
+07-27 14:47:14.257 12227 12246 W tiveboilerplat: Unable to resolve Lcom/wix/detox/reactnative/idlingresources/uimodule/NativeHierarchyManagerReflectedKt; annotation class 2323
+07-27 14:47:14.258 12227 12246 W tiveboilerplat: Unable to resolve Lcom/wix/detox/reactnative/idlingresources/uimodule/RN66Workaround; annotation class 2323
+07-27 14:47:14.258 12227 12246 I chatty  : uid=10114(com.reactnativeboilerplate) roidJUnitRunner identical 1 line
+07-27 14:47:14.258 12227 12246 W tiveboilerplat: Unable to resolve Lcom/wix/detox/reactnative/idlingresources/uimodule/RN66Workaround; annotation class 2323
+07-27 14:47:14.258 12227 12246 W tiveboilerplat: Unable to resolve Lcom/wix/detox/reactnative/idlingresources/uimodule/RN66WorkaroundKt; annotation class 2323
+07-27 14:47:14.258 12227 12246 I chatty  : uid=10114(com.reactnativeboilerplate) roidJUnitRunner identical 1 line
+07-27 14:47:14.258 12227 12246 W tiveboilerplat: Unable to resolve Lcom/wix/detox/reactnative/idlingresources/uimodule/RN66WorkaroundKt; annotation class 2323
+07-27 14:47:14.258 12227 12246 W tiveboilerplat: Unable to resolve Lcom/wix/detox/reactnative/idlingresources/uimodule/UIManagerModuleReflected; annotation class 2323
+07-27 14:47:14.258 12227 12246 I chatty  : uid=10114(com.reactnativeboilerplate) roidJUnitRunner identical 1 line
+07-27 14:47:14.258 12227 12246 W tiveboilerplat: Unable to resolve Lcom/wix/detox/reactnative/idlingresources/uimodule/UIManagerModuleReflected; annotation class 2323
+07-27 14:47:14.258 12227 12246 W tiveboilerplat: Unable to resolve Lcom/wix/detox/reactnative/idlingresources/uimodule/UIManagerModuleReflectedKt; annotation class 2323
+07-27 14:47:14.258 12227 12246 I chatty  : uid=10114(com.reactnativeboilerplate) roidJUnitRunner identical 1 line
+07-27 14:47:14.258 12227 12246 W tiveboilerplat: Unable to resolve Lcom/wix/detox/reactnative/idlingresources/uimodule/UIManagerModuleReflectedKt; annotation class 2323
+07-27 14:47:14.259 12227 12246 W tiveboilerplat: Unable to resolve Lcom/wix/detox/reactnative/idlingresources/uimodule/UIModuleIdlingResource; annotation class 2323
+07-27 14:47:14.259 12227 12246 I chatty  : uid=10114(com.reactnativeboilerplate) roidJUnitRunner identical 1 line
+07-27 14:47:14.259 12227 12246 W tiveboilerplat: Unable to resolve Lcom/wix/detox/reactnative/idlingresources/uimodule/UIModuleIdlingResource; annotation class 2323
+07-27 14:47:14.259 12227 12246 W tiveboilerplat: Unable to resolve Lcom/wix/detox/reactnative/idlingresources/uimodule/ViewCommandOpsQueueReflected; annotation class 2323
+07-27 14:47:14.259 12227 12246 I chatty  : uid=10114(com.reactnativeboilerplate) roidJUnitRunner identical 1 line
+07-27 14:47:14.259 12227 12246 W tiveboilerplat: Unable to resolve Lcom/wix/detox/reactnative/idlingresources/uimodule/ViewCommandOpsQueueReflected; annotation class 2323
+07-27 14:47:14.259 12227 12246 W tiveboilerplat: Unable to resolve Lcom/wix/detox/reactnative/idlingresources/uimodule/ViewCommandOpsQueueReflectedKt; annotation class 2323
+07-27 14:47:14.259 12227 12246 I chatty  : uid=10114(com.reactnativeboilerplate) roidJUnitRunner identical 1 line
+07-27 14:47:14.259 12227 12246 W tiveboilerplat: Unable to resolve Lcom/wix/detox/reactnative/idlingresources/uimodule/ViewCommandOpsQueueReflectedKt; annotation class 2323
+07-27 14:47:14.260 12227 12246 W tiveboilerplat: Unable to resolve Lkotlinx/android/extensions/CacheImplementation; annotation class 2323
+07-27 14:47:14.260 12227 12246 I chatty  : uid=10114(com.reactnativeboilerplate) roidJUnitRunner identical 1 line
+07-27 14:47:14.260 12227 12246 W tiveboilerplat: Unable to resolve Lkotlinx/android/extensions/CacheImplementation; annotation class 2323
+07-27 14:47:14.277 12227 12246 D TestExecutor: Adding listener androidx.test.internal.runner.listener.LogRunListener
+07-27 14:47:14.277 12227 12246 D TestExecutor: Adding listener androidx.test.internal.runner.listener.InstrumentationResultPrinter
+07-27 14:47:14.277 12227 12246 D TestExecutor: Adding listener androidx.test.internal.runner.listener.ActivityFinisherRunListener
+07-27 14:47:14.277 12227 12246 I TestRunner: run started: 1 tests
+07-27 14:47:14.279 12227 12246 I TestRunner: started: runDetoxTests(com.reactnativeboilerplate.DetoxTest)
+07-27 14:47:14.294 12227 12246 D EventInjectionStrategy: Creating injection strategy with input manager.
+07-27 14:47:14.322 12227 12227 W ActivityThread: handleWindowVisibility: no activity for token android.os.BinderProxy@440c20
+07-27 14:47:14.342 12227 12227 D LifecycleMonitor: Lifecycle status change: com.reactnativeboilerplate.MainActivity@28fff9b in: PRE_ON_CREATE
+07-27 14:47:14.363 12227 12261 D SoLoader: libfbjni.so not found on /data/data/com.reactnativeboilerplate/lib-main
+07-27 14:47:14.363 12227 12261 D SoLoader: libfbjni.so found on /data/app/com.reactnativeboilerplate--zp5BliAZkqOgNSuV6Z5Gw==/lib/x86
+07-27 14:47:14.363 12227 12261 D SoLoader: Not resolving dependencies for libfbjni.so
+07-27 14:47:14.364 12227 12227 D LifecycleMonitor: Lifecycle status change: com.reactnativeboilerplate.MainActivity@28fff9b in: CREATED
+07-27 14:47:14.365 12227 12227 D LifecycleMonitor: Lifecycle status change: com.reactnativeboilerplate.MainActivity@28fff9b in: STARTED
+07-27 14:47:14.365 12227 12227 D LifecycleMonitor: Lifecycle status change: com.reactnativeboilerplate.MainActivity@28fff9b in: RESUMED
+07-27 14:47:14.366 12227 12227 D OpenGLRenderer: Skia GL Pipeline
+07-27 14:47:14.368 12227 12261 V AsyncStorageExpoMigration: No scoped database found
+07-27 14:47:14.370 12227 12261 D InstallReferrerState: FEATURE_NOT_SUPPORTED
+07-27 14:47:14.373 12227 12268 V RNKeychainManager: warming up started at 8228757602450
+07-27 14:47:14.374 12227 12261 D SoLoader: libreactnativejni.so not found on /data/data/com.reactnativeboilerplate/lib-main
+07-27 14:47:14.374 12227 12261 D SoLoader: libreactnativejni.so found on /data/app/com.reactnativeboilerplate--zp5BliAZkqOgNSuV6Z5Gw==/lib/x86
+07-27 14:47:14.374 12227 12261 D SoLoader: Not resolving dependencies for libreactnativejni.so
+07-27 14:47:14.376 12227 12268 D RNKeychainManager: Probe cipher storage: g
+07-27 14:47:14.376 12227 12268 D RNKeychainManager: Probe cipher storage: h
+07-27 14:47:14.376 12227 12268 D RNKeychainManager: Probe cipher storage: i
+07-27 14:47:14.376 12227 12268 D RNKeychainManager: Selected storage: h
+07-27 14:47:14.388 12227 12261 W unknown:ReactContext: initializeMessageQueueThreads() is called.
+07-27 14:47:14.388 12227 12261 W [REANIMATED]: Since 2.5.0, Reanimated autoinstalls on Android - you can remove getJSIModulePackage() override in MainApplication.java.
+--------- beginning of crash
+07-27 14:47:14.388 12227 12261 E AndroidRuntime: FATAL EXCEPTION: create_react_context
+07-27 14:47:14.388 12227 12261 E AndroidRuntime: Process: com.reactnativeboilerplate, PID: 12227
+07-27 14:47:14.388 12227 12261 E AndroidRuntime: java.lang.RuntimeException: Unable to load script. Make sure you're either running Metro (run 'npx react-native start') or that your bundle 'index.android.bundle' is packaged correctly for release.
+07-27 14:47:14.388 12227 12261 E AndroidRuntime: 	at com.facebook.react.bridge.CatalystInstanceImpl.jniLoadScriptFromAssets(Native Method)
+07-27 14:47:14.388 12227 12261 E AndroidRuntime: 	at com.facebook.react.bridge.CatalystInstanceImpl.loadScriptFromAssets(Unknown Source:2)
+07-27 14:47:14.388 12227 12261 E AndroidRuntime: 	at com.facebook.react.bridge.JSBundleLoader$1.loadScript(Unknown Source:10)
+07-27 14:47:14.388 12227 12261 E AndroidRuntime: 	at com.facebook.react.bridge.CatalystInstanceImpl.runJSBundle(Unknown Source:18)
+07-27 14:47:14.388 12227 12261 E AndroidRuntime: 	at com.facebook.react.ReactInstanceManager.createReactContext(Unknown Source:177)
+07-27 14:47:14.388 12227 12261 E AndroidRuntime: 	at com.facebook.react.ReactInstanceManager.access$1200(Unknown Source:0)
+07-27 14:47:14.388 12227 12261 E AndroidRuntime: 	at com.facebook.react.ReactInstanceManager$5.run(Unknown Source:69)
+07-27 14:47:14.388 12227 12261 E AndroidRuntime: 	at java.lang.Thread.run(Thread.java:764)
+07-27 14:47:14.391 12227 12261 I Process : Sending signal. PID: 12227 SIG: 9
