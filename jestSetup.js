@@ -74,3 +74,6 @@ global.requestAnimationFrame = cb => {
 // To make warning silent temporary for the lottieview
 // https://github.com/lottie-react-native/lottie-react-native/issues/858
 jest.spyOn(global.console, 'warn').mockImplementation(() => jest.fn());
+
+// To use Jest > 27
+global.__DEV__ = true;
